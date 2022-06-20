@@ -1,7 +1,7 @@
 {
   "name": "emporikos-template",
   "version": "0.1.0",
-  "homepage": "https://mxptx22.github.io/emporikos-template",
+  "homepage": "https://mxptx22.github.io/emporikoswebtemplate",
   "private": true,
   "dependencies": {
     "@fontsource/khula": "^4.5.8",
