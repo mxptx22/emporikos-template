@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/emporikos-template/static/css/main.6e5e6100.css",
+    "main.js": "/emporikos-template/static/js/main.d4d22d0f.js",
+    "static/media/hero1vid.mp4": "/emporikos-template/static/media/hero1vid.c35567dab469a9ec1990.mp4",
+    "static/media/khula-all-400-normal.woff": "/emporikos-template/static/media/khula-all-400-normal.ffa08ba5700fa4e33df1.woff",
+    "static/media/sampleimage.png": "/emporikos-template/static/media/sampleimage.8741407aee900b136f74.png",
+    "static/media/khula-devanagari-400-normal.woff2": "/emporikos-template/static/media/khula-devanagari-400-normal.f41cec1e06b43a352670.woff2",
+    "static/media/khula-latin-400-normal.woff2": "/emporikos-template/static/media/khula-latin-400-normal.ecfed05fe26ccc1ba13c.woff2",
+    "static/media/agencylogotype.svg": "/emporikos-template/static/media/agencylogotype.42186b9ce5274e3cb28ae1bae0b1d038.svg",
+    "static/media/khula-latin-ext-400-normal.woff2": "/emporikos-template/static/media/khula-latin-ext-400-normal.eb75a9abc54dd23a7b8e.woff2",
+    "static/media/icon1.svg": "/emporikos-template/static/media/icon1.4f1fb2f79dc6560618c897a01c4708bd.svg",
+    "static/media/twitter.svg": "/emporikos-template/static/media/twitter.898d947691f46d15a88bfafe1b13a5a5.svg",
+    "static/media/agencyidentifier.svg": "/emporikos-template/static/media/agencyidentifier.d2b73dcd9e16c4e1bd0857f706f2ef9e.svg",
+    "static/media/icon3.svg": "/emporikos-template/static/media/icon3.a88d3e4cdd2f1d8e2260a36631d0a817.svg",
+    "static/media/icon2.svg": "/emporikos-template/static/media/icon2.ea7826ed8d4ba2098d7fe59d3eebe948.svg",
+    "static/media/phone.svg": "/emporikos-template/static/media/phone.6c48d180bcaaa1989d9912b35208fc46.svg",
+    "static/media/map.svg": "/emporikos-template/static/media/map.e3e4436df5281ccf43153f7ac6c922ab.svg",
+    "static/media/facebook.svg": "/emporikos-template/static/media/facebook.145b70d3ebc4c999f7ddfbb7449fa5f9.svg",
+    "index.html": "/emporikos-template/index.html",
+    "static/media/icon4.svg": "/emporikos-template/static/media/icon4.9cabe463032a1d92891e57991ee26808.svg",
+    "main.6e5e6100.css.map": "/emporikos-template/static/css/main.6e5e6100.css.map",
+    "main.d4d22d0f.js.map": "/emporikos-template/static/js/main.d4d22d0f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6e5e6100.css",
+    "static/js/main.d4d22d0f.js"
+  ]
+}
