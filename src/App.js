@@ -1,48 +1,59 @@
-import Navbar from "./Navbar";
-import iPhone from "./Images/iphone.png";
-import SampleImage from "./Images/sampleimage.png";
-import Hero1Vid from "./Images/hero1vid.mp4";
-import { ReactComponent as SmallLogotype } from "./Images/agencyidentifier.svg";
-import { ReactComponent as Icon1 } from "./Images/icon1.svg";
-import { ReactComponent as Icon2 } from "./Images/icon2.svg";
-import { ReactComponent as Icon3 } from "./Images/icon3.svg";
-import { ReactComponent as Icon4 } from "./Images/icon4.svg";
-import { ReactComponent as Facebook } from "./Images/facebook.svg";
-import { ReactComponent as Twitter } from "./Images/twitter.svg";
-import { ReactComponent as Phone } from "./Images/phone.svg";
-import { ReactComponent as Map } from "./Images/map.svg";
-import { useRef, useState, useEffect } from "react";
+import { jsx } from '@emotion/react'
+/** @jsxImportSource @emotion/react */
+import React from 'react' // eslint-disable-line
+import tw from 'twin.macro'
+import Navbar from './Navbar'
+import iPhone from './Images/iphone.png'
+import SampleImage from './Images/sampleimage.png'
+import Hero1Vid from './Images/hero1vid.mp4'
+import { ReactComponent as SmallLogotype } from './Images/agencyidentifier.svg'
+import { ReactComponent as Icon1 } from './Images/icon1.svg'
+import { ReactComponent as Icon2 } from './Images/icon2.svg'
+import { ReactComponent as Icon3 } from './Images/icon3.svg'
+import { ReactComponent as Icon4 } from './Images/icon4.svg'
+import { ReactComponent as Facebook } from './Images/facebook.svg'
+import { ReactComponent as Twitter } from './Images/twitter.svg'
+import { ReactComponent as Phone } from './Images/phone.svg'
+import { ReactComponent as Map } from './Images/map.svg'
+import { useRef, useState, useEffect } from 'react'
 
+// const styles = {
+//   // Move long class sets out of jsx to keep it scannable
+//   container: ({ hasBackground }) => [
+//     tw`flex flex-col items-center justify-center h-screen`,
+//     hasBackground && tw`bg-gradient-to-b from-electric to-ribbon`,
+//   ],
+// }
 function App() {
-  const startRef = useRef();
-  const [navbarLook, setNavbarLook] = useState("navbar navbar-initial");
-  const phoneRef = useRef();
-  const [phoneLook, setPhoneLook] = useState("translateX(200%)");
-  const tableRef = useRef();
-  const [tableLook, setTableLook] = useState("blur(2px)");
+  const startRef = useRef()
+  const [navbarLook, setNavbarLook] = useState('navbar navbar-initial')
+  const phoneRef = useRef()
+  const [phoneLook, setPhoneLook] = useState('translateX(200%)')
+  const tableRef = useRef()
+  const [tableLook, setTableLook] = useState('blur(2px)')
 
   useEffect(() => {
-    const pastWelcome = startRef.current.offsetTop;
-    const pastApp = phoneRef.current.offsetTop * 0.7;
-    const pastTable = tableRef.current.offsetTop * 0.7;
+    const pastWelcome = startRef.current.offsetTop
+    const pastApp = phoneRef.current.offsetTop * 0.7
+    const pastTable = tableRef.current.offsetTop * 0.7
     // window.addEventListener('scroll', handleScroll);
-    const handleScroll = (event) => {
+    const handleScroll = event => {
       if (window.scrollY < pastWelcome) {
-        setNavbarLook("navbar navbar-initial");
+        setNavbarLook('navbar navbar-initial')
       }
       if (window.scrollY > pastWelcome) {
-        setNavbarLook("navbar");
+        setNavbarLook('navbar')
       }
       if (window.scrollY > pastApp) {
-        setPhoneLook("translateX(0%)");
+        setPhoneLook('translateX(0%)')
       }
 
       if (window.scrollY > pastTable) {
-        setTableLook("blur(0px)");
+        setTableLook('blur(0px)')
       }
-    };
-    window.addEventListener("scroll", handleScroll);
-  }, []);
+    }
+    window.addEventListener('scroll', handleScroll)
+  }, [])
 
   return (
     <>
@@ -127,7 +138,7 @@ function App() {
           <div className="fifty al-right hidden">
             <img
               src={iPhone}
-              style={{ transform: phoneLook, transition: "all 1s" }}
+              style={{ transform: phoneLook, transition: 'all 1s' }}
             ></img>
           </div>
         </div>
@@ -195,7 +206,6 @@ function App() {
                   </p>
                 </div>
               </div>
-
             </div>
           </div>
           <div className="separator-medium"></div>
@@ -240,9 +250,9 @@ function App() {
             </div>
           </div>
         </div>
-        </div>
+      </div>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
