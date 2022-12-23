@@ -1,6 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --def-shadow: 0 0 30px -19px black;
-  --minor-gray: rgb(249,249,249)
+  --minor-gray: rgb(249, 249, 249);
 }
 
 * {
@@ -11,9 +15,9 @@ body {
   background-color: var(--minor-gray);
   margin: 0;
   font-size: 1.25rem;
-  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  /* font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: -0.3px;
@@ -26,13 +30,23 @@ code {
 }
 
 @keyframes hamburgermenuDrop {
-  from {transform: translateY(-100%);}
-  to {transform: translateY(0%);}
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
 }
 
 @keyframes hamburgermenuVisibility {
-  from {opacity: 0%;backdrop-filter: blur(0px);}
-  to {opacity: 100%;backdrop-filter: blur(5px)}
+  from {
+    opacity: 0%;
+    backdrop-filter: blur(0px);
+  }
+  to {
+    opacity: 100%;
+    backdrop-filter: blur(5px);
+  }
 }
 
 .pagecontainer {
@@ -41,7 +55,7 @@ code {
   overflow: hidden;
 }
 
-@media screen and (max-width:999px) {
+@media screen and (max-width: 999px) {
   .hero {
     min-height: 100vh;
   }
@@ -85,7 +99,7 @@ code {
   .herovid {
     min-height: 100vh;
   }
-  
+
   .herooverlay {
     min-height: 100vh;
   }
@@ -95,7 +109,7 @@ code {
   }
 
   .navbar-text {
-    display:none;
+    display: none;
   }
 
   .twowing-container {
@@ -105,10 +119,9 @@ code {
   .fifty {
     width: 100%;
   }
+}
 
-  }
-
-@media screen and (min-width:1000px) {
+@media screen and (min-width: 1000px) {
   .hero {
     min-height: 25em;
     aspect-ratio: 8/3;
@@ -118,7 +131,7 @@ code {
     min-height: 25em;
     aspect-ratio: 8/3;
   }
-  
+
   .herooverlay {
     min-height: 25em;
     aspect-ratio: 8/3;
@@ -130,7 +143,7 @@ code {
     /* bottom: 2em; */
 
   .rectdata-container {
-    width:80%;
+    width: 80%;
   }
 
   .navbar-text {
@@ -155,11 +168,10 @@ code {
   .bigmenu-container {
     display: none;
   }
-
 }
 
 .separator-medium {
-  height:4.5em;
+  height: 4.5em;
 }
 
 .separator-semibig {
@@ -167,15 +179,15 @@ code {
 }
 
 .separator-big {
-  height:8.5em;
+  height: 8.5em;
 }
 
 .margin-small {
-  margin-bottom:2.5em;
+  margin-bottom: 2.5em;
 }
 
 .margin-medium {
-  margin-bottom:4.5em;
+  margin-bottom: 4.5em;
 }
 
 .margin-semibig {
@@ -183,26 +195,25 @@ code {
 }
 
 .margin-big {
-  margin-bottom:8.5em;
+  margin-bottom: 8.5em;
 }
 
 .navbar-logotype {
-aspect-ratio:3/1;
-width: min(40vw, 15ch);
-/* height: 2em; */
-
+  aspect-ratio: 3/1;
+  width: min(40vw, 15ch);
+  /* height: 2em; */
 }
 
 .small-logotype {
-aspect-ratio:1/1;
-width: clamp(30px, 5vw, 7em);
-fill: whitesmoke;
-margin-left: auto;
-margin-right: auto;
+  aspect-ratio: 1/1;
+  width: clamp(30px, 5vw, 7em);
+  fill: whitesmoke;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .navbar {
-  width:100vw;
+  width: 100vw;
   position: fixed;
   background-color: var(--minor-gray);
   min-height: 2em;
@@ -220,7 +231,7 @@ margin-right: auto;
 .navbar-initial {
   margin-top: 1em;
   border-radius: 1rem;
-  width:80vw;
+  width: 80vw;
   min-height: 2em;
   margin-left: 10vw;
   margin-right: 10vw;
@@ -231,11 +242,8 @@ margin-right: auto;
   text-transform: uppercase;
   /* display: flex; */
   flex-direction: row;
-  gap:1.4em;
-  
+  gap: 1.4em;
 }
-
-
 
 .hero {
   width: 100vw;
@@ -260,7 +268,7 @@ margin-right: auto;
 .herooverlay {
   position: absolute;
   width: 100vw;
-  top:0;
+  top: 0;
   background-color: rgba(82, 82, 82, 0.88);
   z-index: 0;
   /* min-height: 25em; */
@@ -287,20 +295,20 @@ margin-right: auto;
 
 .news-container {
   display: grid;
-  grid-template-columns: repeat( auto-fit, minmax(max(200px,22%), 1fr) );
-  min-height:20vh;
+  grid-template-columns: repeat(auto-fit, minmax(max(200px, 22%), 1fr));
+  min-height: 20vh;
   margin-left: auto;
   margin-right: auto;
   gap: 1.5em;
-  margin-top:0.67em;
+  margin-top: 0.67em;
 }
 
-.news-item{
+.news-item {
   background-color: whitesmoke;
   border-radius: 0.3em;
   padding: 1em;
   display: flex;
-  gap:1em;
+  gap: 1em;
   box-shadow: var(--def-shadow);
 }
 
@@ -314,7 +322,6 @@ margin-right: auto;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .news-linker {
@@ -323,13 +330,13 @@ margin-right: auto;
 }
 
 h1.newstitle {
-  margin:0
+  margin: 0;
 }
 
 .rectdata-container {
   display: grid;
-  grid-template-columns: repeat( auto-fit, minmax(max(200px,22%), 1fr) );
-  min-height:20vh;
+  grid-template-columns: repeat(auto-fit, minmax(max(200px, 22%), 1fr));
+  min-height: 20vh;
   margin-left: auto;
   margin-right: auto;
   gap: 0.25em;
@@ -346,7 +353,7 @@ h1.newstitle {
   height: 3em;
   width: 3em;
   position: absolute;
-  bottom:0.5em;
+  bottom: 0.5em;
   left: 0.5em;
   fill: darkgray;
   z-index: -1;
@@ -362,7 +369,7 @@ h1.newstitle {
 }
 
 .accent2 {
-  background-color:silver;
+  background-color: silver;
 }
 
 .coltext1 {
@@ -377,15 +384,14 @@ h1.newstitle {
   border-style: hidden;
   transition: all 1s;
   display: grid;
-  grid-template-columns: repeat( auto-fit, minmax(max(100px,22%), 200px) );
+  grid-template-columns: repeat(auto-fit, minmax(max(100px, 22%), 200px));
   justify-content: center;
   align-self: center;
   gap: 1em;
 }
 
-
- .table-comparator-cell {
-  border-bottom: 3px solid darkgray; 
+.table-comparator-cell {
+  border-bottom: 3px solid darkgray;
   padding: 1em;
   position: relative;
 }
@@ -420,7 +426,6 @@ h2.table-comparator-text {
   margin-top: 2em;
   margin-bottom: 2em;
   width: min-content;
-
 }
 
 .seventy {
@@ -448,7 +453,10 @@ h2.table-comparator-text {
   margin-right: auto;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   margin-top: 0;
 }
 
@@ -466,7 +474,7 @@ button {
   font-size: 1em;
   border-radius: 0.3rem;
   padding: 0.5ch 1ch;
-  background-color:gainsboro;
+  background-color: gainsboro;
   border: none;
 }
 
@@ -478,8 +486,6 @@ button {
   font-weight: normal;
   font-style: italic;
   font-family: 'Times New Roman', Times, serif;
-
-
 }
 .herosubtitle {
   font-size: 3.5em;
@@ -493,8 +499,8 @@ button {
 
 .herotextcontainer {
   z-index: 1;
-  overflow:visible;
-  width:100vw;
+  overflow: visible;
+  width: 100vw;
   padding: 0 5% 0 5%;
   justify-content: center;
   align-items: center;
@@ -516,12 +522,12 @@ form {
 
 label {
   display: block;
-  margin:0.5em 0;
+  margin: 0.5em 0;
 }
 
 input {
   display: block;
-  margin:0.5em 0;
+  margin: 0.5em 0;
   font-size: 1em;
   width: 50%;
   border-radius: 0.3rem;
@@ -531,7 +537,7 @@ input {
 textarea {
   width: 75% !important;
   resize: none;
-  margin:0.5em 0 !important;
+  margin: 0.5em 0 !important;
   display: block;
   min-height: 20ch;
   border-radius: 0.3rem;
@@ -539,11 +545,11 @@ textarea {
 }
 
 .sendbutton {
-  margin:0.5em 0;
+  margin: 0.5em 0;
 }
 
 .gap {
-  gap:3em;
+  gap: 3em;
 }
 
 p {

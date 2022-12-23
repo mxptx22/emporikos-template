@@ -6,10 +6,19 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
-    "@fontsource/khula": "^4.5.10",
+    "@fontsource/asap": "^4.5.10",
+    "@fontsource/assistant": "^4.5.11",
+    "@fontsource/bellota": "^4.5.10",
+    "@fontsource/bitter": "^4.5.10",
+    "@fontsource/commissioner": "^4.5.9",
+    "@fontsource/la-belle-aurore": "^4.5.11",
+    "@fontsource/saira": "^4.5.11",
+    "@fontsource/sarabun": "^4.5.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "^5.0.1"
+    "react-scripts": "^5.0.1",
+    "react-scroll-trigger": "^0.6.14",
+    "tailwindcss-palette-generator": "^0.2.5"
   },
   "babelMacros": {
     "twin": {

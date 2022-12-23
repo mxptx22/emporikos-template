@@ -1311,10 +1311,45 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@fontsource/khula@^4.5.10":
+"@fontsource/asap@^4.5.10":
   version "4.5.10"
-  resolved "https://registry.yarnpkg.com/@fontsource/khula/-/khula-4.5.10.tgz#e8d709274d3a8977448b77874895be094ac25020"
-  integrity sha512-DMxaIedEK/yzaATshHtvFyvWLdIRUSpZ8l66pY7eZ2n0AsjyDl27gt5ogGwoChQg/8LbByESa2alWVe9ikZzgA==
+  resolved "https://registry.yarnpkg.com/@fontsource/asap/-/asap-4.5.10.tgz#239b6797b42c282a7d0e6aa78adff32789c77ba5"
+  integrity sha512-Slnn9A6onmKJlzCn1YvzQSKApMCBAAQS/X8mqVMWkh7OnOx1DoFzWyq5xsl2KpzGjp820V94xmJ/dhDNJTufAw==
+
+"@fontsource/assistant@^4.5.11":
+  version "4.5.11"
+  resolved "https://registry.yarnpkg.com/@fontsource/assistant/-/assistant-4.5.11.tgz#26c6d832c9d79c930de00d0fde594230b5390393"
+  integrity sha512-PU6R0835c+ywtNERnJtm6ipHZzb4rEIv9EiQKe1H+GPmadYKv+/ZxhRjN7VKzlgwc7DrxD8rSMr6FN6nOky0qg==
+
+"@fontsource/bellota@^4.5.10":
+  version "4.5.10"
+  resolved "https://registry.yarnpkg.com/@fontsource/bellota/-/bellota-4.5.10.tgz#458817cb4c1a82eede1eb000b5eabdae1c4112ef"
+  integrity sha512-KR8IU8Ks35eDwMF7FUJRIBTwFsy+/DxDNn8koZDKLp0IXekCI/a0H7s/bKD/uwiIyolOsbQ8QMKnH1JqvFuaIw==
+
+"@fontsource/bitter@^4.5.10":
+  version "4.5.10"
+  resolved "https://registry.yarnpkg.com/@fontsource/bitter/-/bitter-4.5.10.tgz#5c3e269ead5eb10ef8c86218382b89d6a637d4f1"
+  integrity sha512-iKpM2qm8V1rUfASFG2GtgdmdAFxmZ1uN6SIYMx+C84X56CbZX369HFwaykrZCeTSMAH4uEKOVHCbE7nc4BJGlA==
+
+"@fontsource/commissioner@^4.5.9":
+  version "4.5.9"
+  resolved "https://registry.yarnpkg.com/@fontsource/commissioner/-/commissioner-4.5.9.tgz#224903e88fb3ee2f3d407e5fd933704d44fcd419"
+  integrity sha512-gApIMZJIBhKncKVZtc98kpzSl4hp0fyBUN9+fbK62vTBMRUJAjkdIHwo60W36gCztYHgGsxXVwrzKEdiTC1pow==
+
+"@fontsource/la-belle-aurore@^4.5.11":
+  version "4.5.11"
+  resolved "https://registry.yarnpkg.com/@fontsource/la-belle-aurore/-/la-belle-aurore-4.5.11.tgz#90086c59682334ab3901ad962b7d97c3966dae1f"
+  integrity sha512-tKg/Ia+p9E+Qx56aFQQROiO8bp1AtQBgZQ4uGIsJBLdkPYt2viLOn3NbrcfkCZT9v0N9NV7X3h9V91fiGHxT2A==
+
+"@fontsource/saira@^4.5.11":
+  version "4.5.11"
+  resolved "https://registry.yarnpkg.com/@fontsource/saira/-/saira-4.5.11.tgz#0900c5b6bd44ad4c20c55ad19f4e5dba546fdb25"
+  integrity sha512-N61dBsPVvfmybGDZxe3YE4OhCXiq7wYgzArxNiCyGCpQz0Q+MEy2BN42jtvz4gqwVDCqvKVQMDD2I+b10kZ2BQ==
+
+"@fontsource/sarabun@^4.5.9":
+  version "4.5.9"
+  resolved "https://registry.yarnpkg.com/@fontsource/sarabun/-/sarabun-4.5.9.tgz#d5e0f1d37057b38adf8d4b83cc28dace1bfb4827"
+  integrity sha512-y9VXF+jp9JtwRNlWjUwW4QFKfmq03MBhYjaSfwbXDuTKIXWdm4kaWlbUi2ELpvmYx3ipOSAkjYOI73cjapF1xA==
 
 "@humanwhocodes/config-array@^0.11.8":
   version "0.11.8"
@@ -2022,6 +2057,11 @@
   resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-2.7.2.tgz#6c2324641cc4ba050a8c710b2b251b377581fbf0"
   integrity sha512-KufADq8uQqo1pYKVIYzfKbJfBAc0sOeXqGbFaSpv8MRmC/zXgowNZmFcbngndGk922QDmOASEXUZCaY48gs4cg==
 
+"@types/prop-types@*":
+  version "15.7.5"
+  resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.5.tgz#5f19d2b85a98e9558036f6a3cacc8819420f05cf"
+  integrity sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==
+
 "@types/q@^1.5.1":
   version "1.5.5"
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.5.tgz#75a2a8e7d8ab4b230414505d92335d1dcb53a6df"
@@ -2037,6 +2077,22 @@
   resolved "https://registry.yarnpkg.com/@types/range-parser/-/range-parser-1.2.4.tgz#cd667bcfdd025213aafb7ca5915a932590acdcdc"
   integrity sha512-EEhsLsD6UsDM1yFhAvy0Cjr6VwmpMWqFBCb9w07wVugF7w9nfajxLuVmngTIpgS6svCnm6Vaw+MZhoDCKnOfsw==
 
+"@types/react-dom@^16.9.14":
+  version "16.9.17"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.9.17.tgz#29100cbcc422d7b7dba7de24bb906de56680dd34"
+  integrity sha512-qSRyxEsrm5btPXnowDOs5jSkgT8ldAA0j6Qp+otHUh+xHzy3sXmgNfyhucZjAjkgpdAUw9rJe0QRtX/l+yaS4g==
+  dependencies:
+    "@types/react" "^16"
+
+"@types/react@^16", "@types/react@^16.14.23":
+  version "16.14.34"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.14.34.tgz#d129324ffda312044e1c47aab18696e4ed493282"
+  integrity sha512-b99nWeGGReLh6aKBppghVqp93dFJtgtDOzc8NXM6hewD8PQ2zZG5kBLgbx+VJr7Q7WBMjHxaIl3dwpwwPIUgyA==
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    csstype "^3.0.2"
+
 "@types/resolve@1.17.1":
   version "1.17.1"
   resolved "https://registry.yarnpkg.com/@types/resolve/-/resolve-1.17.1.tgz#3afd6ad8967c77e4376c598a82ddd58f46ec45d6"
@@ -2048,6 +2104,11 @@
   version "0.12.0"
   resolved "https://registry.yarnpkg.com/@types/retry/-/retry-0.12.0.tgz#2b35eccfcee7d38cd72ad99232fbd58bffb3c84d"
   integrity sha512-wWKOClTTiizcZhXnPY4wikVAwmdYHp8q6DmC+EJUzAMsycb7HB32Kh9RN4+0gExjmPmZSAQjgURXIGATPegAvA==
+
+"@types/scheduler@*":
+  version "0.16.2"
+  resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.2.tgz#1a62f89525723dde24ba1b01b092bf5df8ad4d39"
+  integrity sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==
 
 "@types/semver@^7.3.12":
   version "7.3.13"
@@ -3007,6 +3068,11 @@ chokidar@^3.4.2, chokidar@^3.5.3:
   optionalDependencies:
     fsevents "~2.3.2"
 
+chroma-js@^2.4.2:
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/chroma-js/-/chroma-js-2.4.2.tgz#dffc214ed0c11fa8eefca2c36651d8e57cbfb2b0"
+  integrity sha512-U9eDw6+wt7V8z5NncY2jJfZa+hUH8XEj8FQHgFJTrUFnJfXYf4Ml4adI2vXZOjqRDpFWtYVWypDfZwnJ+HIR4A==
+
 chrome-trace-event@^1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/chrome-trace-event/-/chrome-trace-event-1.0.3.tgz#1015eced4741e15d06664a957dbbf50d041e26ac"
@@ -3028,6 +3094,11 @@ clean-css@^5.2.2:
   integrity sha512-lCr8OHhiWCTw4v8POJovCoh4T7I9U11yVsPjMWWnnMmp9ZowCxyad1Pathle/9HjaDp+fdQKjO9fQydE6RHTZg==
   dependencies:
     source-map "~0.6.0"
+
+clean-react-props@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/clean-react-props/-/clean-react-props-0.4.0.tgz#68642be5538a5fece380fed704a560de2db67954"
+  integrity sha512-8KKm9sC/cUax4SBWwSY5a3W44aJKOUQg39Bo3fRErp3/mF8D1kMN9xc1lvQGmvkK/AmpH2Xh/UYVZOJMcxoy9w==
 
 cliui@^7.0.2:
   version "7.0.4"
@@ -5871,6 +5942,11 @@ lodash.sortby@^4.7.0:
   resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
   integrity sha512-HDWXG8isMntAyRF5vZ7xKuEvOhT4AhlRt/3czTSjvGUxjYCBVRQY48ViDHyfYz9VIoBkW4TMGQNapx+l3RUwdA==
 
+lodash.throttle@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
+  integrity sha512-wIkUCfVKpVsWo3JSZlc+8MB5it+2AN5W8J7YVMST30UrvcQNZ1Okbj+rbVniijTWE6FGYy4XJq/rHkas8qJMLQ==
+
 lodash.uniq@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
@@ -7288,6 +7364,17 @@ react-scripts@^5.0.1:
   optionalDependencies:
     fsevents "^2.3.2"
 
+react-scroll-trigger@^0.6.14:
+  version "0.6.14"
+  resolved "https://registry.yarnpkg.com/react-scroll-trigger/-/react-scroll-trigger-0.6.14.tgz#7a1eea67356dc98816df138f5971140fbec20c00"
+  integrity sha512-Z7l9CMJTU4uPArv/3XaJzCtSej+JeLpbev1X7JxAmZwGf16ya5mxqjeeQ/5O4thvOVK0ZWhgyQf52tH1hg1O7Q==
+  dependencies:
+    "@types/react" "^16.14.23"
+    "@types/react-dom" "^16.9.14"
+    clean-react-props "^0.4.0"
+    lodash.throttle "^4.1.1"
+    prop-types "^15.8.1"
+
 react@^18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
@@ -8092,6 +8179,13 @@ symbol-tree@^3.2.4:
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/symbol-tree/-/symbol-tree-3.2.4.tgz#430637d248ba77e078883951fb9aa0eed7c63fa2"
   integrity sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==
+
+tailwindcss-palette-generator@^0.2.5:
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/tailwindcss-palette-generator/-/tailwindcss-palette-generator-0.2.5.tgz#052aa5f3786ce998ed43dc223ec1668916a9559a"
+  integrity sha512-35eMAZEYvhjhXI94SFg/PiviMEk3naNy36lowOfvU1aTbl/MB1pMiF7YEngdG5T6987Um2Bv9CRFF5bK5apLFg==
+  dependencies:
+    chroma-js "^2.4.2"
 
 tailwindcss@^3.0.2, tailwindcss@^3.2.4:
   version "3.2.4"

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 function BigMenu() {
   return (
@@ -13,7 +13,7 @@ function BigMenu() {
         </div>
       </div>
     </>
-  );
+  )
 }
 
-export default BigMenu;
+export default BigMenu
