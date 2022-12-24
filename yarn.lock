@@ -1311,20 +1311,15 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@fontsource/asap@^4.5.10":
-  version "4.5.10"
-  resolved "https://registry.yarnpkg.com/@fontsource/asap/-/asap-4.5.10.tgz#239b6797b42c282a7d0e6aa78adff32789c77ba5"
-  integrity sha512-Slnn9A6onmKJlzCn1YvzQSKApMCBAAQS/X8mqVMWkh7OnOx1DoFzWyq5xsl2KpzGjp820V94xmJ/dhDNJTufAw==
+"@fontsource/aileron@^4.5.3":
+  version "4.5.3"
+  resolved "https://registry.yarnpkg.com/@fontsource/aileron/-/aileron-4.5.3.tgz#cc6b1f1fe5505d4a83acccd909f3858c67224dd8"
+  integrity sha512-pFqJqwhvNSb5bkrMRCJ66eyxtosPtR0THTfti6l1sl9vBWs7kQlu0mzXPdqr9qyLy82OnzsQhBGYCBszbbiV/w==
 
 "@fontsource/assistant@^4.5.11":
   version "4.5.11"
   resolved "https://registry.yarnpkg.com/@fontsource/assistant/-/assistant-4.5.11.tgz#26c6d832c9d79c930de00d0fde594230b5390393"
   integrity sha512-PU6R0835c+ywtNERnJtm6ipHZzb4rEIv9EiQKe1H+GPmadYKv+/ZxhRjN7VKzlgwc7DrxD8rSMr6FN6nOky0qg==
-
-"@fontsource/bellota@^4.5.10":
-  version "4.5.10"
-  resolved "https://registry.yarnpkg.com/@fontsource/bellota/-/bellota-4.5.10.tgz#458817cb4c1a82eede1eb000b5eabdae1c4112ef"
-  integrity sha512-KR8IU8Ks35eDwMF7FUJRIBTwFsy+/DxDNn8koZDKLp0IXekCI/a0H7s/bKD/uwiIyolOsbQ8QMKnH1JqvFuaIw==
 
 "@fontsource/bitter@^4.5.10":
   version "4.5.10"
@@ -1336,20 +1331,25 @@
   resolved "https://registry.yarnpkg.com/@fontsource/commissioner/-/commissioner-4.5.9.tgz#224903e88fb3ee2f3d407e5fd933704d44fcd419"
   integrity sha512-gApIMZJIBhKncKVZtc98kpzSl4hp0fyBUN9+fbK62vTBMRUJAjkdIHwo60W36gCztYHgGsxXVwrzKEdiTC1pow==
 
+"@fontsource/el-messiri@^4.5.11":
+  version "4.5.11"
+  resolved "https://registry.yarnpkg.com/@fontsource/el-messiri/-/el-messiri-4.5.11.tgz#93bfea90d8fdbcfe9485c6096bfb209767cfb27d"
+  integrity sha512-FSsMqLAKGbvzvIzPSRP0iB/eEcoBw8Qtua9do86LDKvmB1mp7NtPJOOBefCWMBi7dtrtmbJKuYlvvrswMfOE5g==
+
 "@fontsource/la-belle-aurore@^4.5.11":
   version "4.5.11"
   resolved "https://registry.yarnpkg.com/@fontsource/la-belle-aurore/-/la-belle-aurore-4.5.11.tgz#90086c59682334ab3901ad962b7d97c3966dae1f"
   integrity sha512-tKg/Ia+p9E+Qx56aFQQROiO8bp1AtQBgZQ4uGIsJBLdkPYt2viLOn3NbrcfkCZT9v0N9NV7X3h9V91fiGHxT2A==
 
+"@fontsource/raleway@^4.5.11":
+  version "4.5.11"
+  resolved "https://registry.yarnpkg.com/@fontsource/raleway/-/raleway-4.5.11.tgz#6da0bad1f44e0360fe465663ac0683601d29bda7"
+  integrity sha512-WrFuS5q3tPqNci4iDwIf7lnkHY5jrkWswy6B007W//cAB7Iiw2NuxBNxrCetYpe3efPbEoFPcoKeTPqDzoWQ3A==
+
 "@fontsource/saira@^4.5.11":
   version "4.5.11"
   resolved "https://registry.yarnpkg.com/@fontsource/saira/-/saira-4.5.11.tgz#0900c5b6bd44ad4c20c55ad19f4e5dba546fdb25"
   integrity sha512-N61dBsPVvfmybGDZxe3YE4OhCXiq7wYgzArxNiCyGCpQz0Q+MEy2BN42jtvz4gqwVDCqvKVQMDD2I+b10kZ2BQ==
-
-"@fontsource/sarabun@^4.5.9":
-  version "4.5.9"
-  resolved "https://registry.yarnpkg.com/@fontsource/sarabun/-/sarabun-4.5.9.tgz#d5e0f1d37057b38adf8d4b83cc28dace1bfb4827"
-  integrity sha512-y9VXF+jp9JtwRNlWjUwW4QFKfmq03MBhYjaSfwbXDuTKIXWdm4kaWlbUi2ELpvmYx3ipOSAkjYOI73cjapF1xA==
 
 "@humanwhocodes/config-array@^0.11.8":
   version "0.11.8"
@@ -7288,6 +7288,11 @@ react-error-overlay@^6.0.11:
   version "6.0.11"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.11.tgz#92835de5841c5cf08ba00ddd2d677b6d17ff9adb"
   integrity sha512-/6UZ2qgEyH2aqzYZgQPxEnz33NJ2gNsnHA2o5+o4wW9bLM/JYQitNP9xPhsXwC08hMMovfGe/8retsdDsczPRg==
+
+react-icons@^4.7.1:
+  version "4.7.1"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.7.1.tgz#0f4b25a5694e6972677cb189d2a72eabea7a8345"
+  integrity sha512-yHd3oKGMgm7zxo3EA7H2n7vxSoiGmHk5t6Ou4bXsfcgWyhfDKMpyKfhHR6Bjnn63c+YXBLBPUql9H4wPJM6sXw==
 
 react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"

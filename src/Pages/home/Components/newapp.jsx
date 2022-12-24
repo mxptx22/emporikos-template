@@ -1,29 +1,34 @@
+/** @jsxImportSource @emotion/react */
+import tw, { css, styled } from 'twin.macro'
+
 import React, { useState, useEffect, useRef } from 'react'
 import iPhone from '../../../Images/iphone.png'
+import { Header1 } from '../../Reusables/headers'
+import { Section } from '../../Reusables/layout'
+import { ButtonPrimary } from '../../Reusables/buttons'
 
 function NewAppAttn() {
   const phoneRef = useRef()
   const [phoneLook, setPhoneLook] = useState('translateX(200%)')
 
   useEffect(() => {
-    const pastApp = phoneRef.current.offsetTop * 0.7
+    const pastApp = phoneRef.current.offsetTop - window.innerHeight / 2
     const handleScroll = event => {
-      if (window.scrollY > pastApp) {
-        setPhoneLook('translateX(0%)')
-      }
+      window.scrollY > pastApp
+        ? setPhoneLook('translateX(0%)')
+        : setPhoneLook('translateX(200%)')
     }
     window.addEventListener('scroll', handleScroll)
   }, [])
 
   return (
-    <div>
-      {' '}
-      <h1 ref={phoneRef} className="accentheader">
-        Our Brand New App
-      </h1>
-      <div className="twowing-container">
-        <div className="fifty flex-column">
-          <p>
+    <Section>
+      <Header1 ref={phoneRef}>
+        <span>Our Brand New App</span>
+      </Header1>
+      <div className="flex gap-32">
+        <div className="w-full text-justify">
+          <div>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
             fugiat accusamus officiis velit officia saepe totam dolor fugit
             libero nobis dolores commodi eaque blanditiis labore, praesentium,
@@ -36,17 +41,19 @@ function NewAppAttn() {
             voluptatibus est aliquam nesciunt dolorum, quaerat asperiores minus
             assumenda alias voluptatem eligendi pariatur libero maiores adipisci
             reprehenderit consectetur iusto. Eaque, consequatur? Rem.
-          </p>
-          <button className="button-download">Download</button>
+          </div>
+          <ButtonPrimary tw="text-primary-700 my-6">
+            <span>Download</span>
+          </ButtonPrimary>
         </div>
-        <div className="fifty al-right hidden">
+        <div className="hidden md:block md:w-1/3">
           <img
             src={iPhone}
             style={{ transform: phoneLook, transition: 'all 1s' }}
           ></img>
         </div>
       </div>
-    </div>
+    </Section>
   )
 }
 

@@ -16,7 +16,7 @@ const palette = getPalette([
     name: 'accent',
   },
   {
-    color: '#4e4e4e',
+    color: '#a19ea6',
     name: 'neutral',
   },
 ])
@@ -25,9 +25,10 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     fontFamily: {
-      sans: ['Asap', 'Saira', 'Assistant', 'sans-serif'],
+      sans: ['Assistant', 'sans-serif'],
       serif: ['Bitter', 'serif'],
-      sansax: ['Sarabun', 'Bellota', 'monospace'],
+      sansax: ['Raleway', 'monospace'],
+      serifax: ['Bitter', 'El Messiri', 'monospace'],
       handwritten: ['La Belle Aurore', 'serif'],
     },
     extend: {
