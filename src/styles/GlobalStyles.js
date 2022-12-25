@@ -2,21 +2,37 @@ import { Global, css } from '@emotion/react'
 import styled from '@emotion/styled'
 import tw, { theme, GlobalStyles as BaseStyles } from 'twin.macro'
 
-export const globalPadding = '7rem'
+export const globalPaddingMini = theme('spacing.2')
+export const globalPadding = theme('spacing.28')
+
 export const globalPaddingVariants = {
   class: {
-    paddingLeft: globalPadding,
-    paddingRight: globalPadding,
+    paddingLeft: globalPaddingMini,
+    paddingRight: globalPaddingMini,
+    [`@media(min-width: ${theme('screens.md')})`]: {
+      paddingLeft: globalPadding,
+      paddingRight: globalPadding,
+    },
   },
   classOffset: {
-    paddingLeft: globalPadding,
-    paddingRight: globalPadding,
-    marginLeft: '-' + globalPadding,
-    marginRight: '-' + globalPadding,
+    paddingLeft: globalPaddingMini,
+    paddingRight: globalPaddingMini,
+    marginLeft: '-' + globalPaddingMini,
+    marginRight: '-' + globalPaddingMini,
+    [`@media(min-width: ${theme('screens.md')})`]: {
+      paddingLeft: globalPadding,
+      paddingRight: globalPadding,
+      marginLeft: '-' + globalPadding,
+      marginRight: '-' + globalPadding,
+    },
   },
   classCover: {
-    marginLeft: '-' + globalPadding,
-    marginRight: '-' + globalPadding,
+    marginLeft: '-' + globalPaddingMini,
+    marginRight: '-' + globalPaddingMini,
+    [`@media(min-width: ${theme('screens.md')})`]: {
+      marginLeft: '-' + globalPadding,
+      marginRight: '-' + globalPadding,
+    },
   },
 }
 
