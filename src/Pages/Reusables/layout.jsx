@@ -19,7 +19,7 @@ export function Section({ children }) {
 
 function Layout({ children }) {
   return (
-    <div css={globalPaddingVariants.class}>
+    <div className="w-screen overflow-hidden" css={globalPaddingVariants.class}>
       {children}
       <Contact />
     </div>

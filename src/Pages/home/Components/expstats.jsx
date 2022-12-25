@@ -1,8 +1,19 @@
 /** @jsxImportSource @emotion/react */
-import tw, { css, styled, theme } from 'twin.macro'
+import tw, { theme, styled } from 'twin.macro'
 import React, { useRef, useState, useEffect } from 'react'
 import { Header1, Label } from '../../Reusables/headers'
 import { Section } from '../../Reusables/layout'
+
+export const TableCell = ({ textHighlight = '', textLabel = '' }) => {
+  const TableContainer = styled.div(tw`border-b border-primary-700 py-4 w-56`)
+  const TableAccent = styled.div(tw`text-7xl font-handwritten leading-[0.8]`)
+  return (
+    <TableContainer>
+      <TableAccent>{textHighlight}</TableAccent>
+      <Label>{textLabel}</Label>
+    </TableContainer>
+  )
+}
 
 function ExpStats() {
   const tableRef = useRef()
@@ -19,32 +30,19 @@ function ExpStats() {
     window.addEventListener('scroll', handleScroll)
   }, [])
 
-  const TableCell = styled.div([tw`border-b border-primary-700 py-4 w-56`])
-  const TableCellAccent = tw`text-7xl font-handwritten leading-[0.8]`
-
   return (
     <Section>
       <div ref={tableRef} />
       <Header1>
         <span>Years of Experience</span>
       </Header1>
-
       <div
         className="grid w-full grid-cols-3 gap-3 text-center mt-6 py-12 place-items-center transition-all duration-1000"
         style={{ filter: tableLook }}
       >
-        <TableCell>
-          <div css={TableCellAccent}>2 mil</div>
-          <Label>Clients Worldwide</Label>
-        </TableCell>
-        <TableCell>
-          <div css={TableCellAccent}>99%</div>
-          <Label>Satisfaction Rate</Label>
-        </TableCell>
-        <TableCell>
-          <div css={TableCellAccent}>8</div>
-          <Label>Locations</Label>
-        </TableCell>
+        <TableCell textHighlight="2 mil" textLabel="Clients Worldwide" />
+        <TableCell textHighlight="99%" textLabel="Satisfaction Rate" />
+        <TableCell textHighlight="8" textLabel="Locations" />
       </div>
     </Section>
   )

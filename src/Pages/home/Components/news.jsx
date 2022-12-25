@@ -5,72 +5,58 @@ import React from 'react'
 import SampleImage from '../../../Images/sampleimage.png'
 import { Section } from '../../Reusables/layout'
 import { globalPaddingVariants } from '../../../styles/GlobalStyles'
-import { Header1 } from '../../Reusables/headers'
+import { Header1, Subheader2 } from '../../Reusables/headers'
+
+const NewsItem = ({ textTitle = '', textDesc = '', imgPrev = SampleImage }) => {
+  return (
+    <div className="bg-neutral-50 rounded-sm p-4 flex gap-4 shadow-md cursor-pointer hover:scale-105 transition-all duration-500">
+      <div className="w-1/3">
+        <img src={imgPrev} className="w-full aspect-square"></img>
+      </div>
+      <div className="w-full">
+        <Subheader2>{textTitle}</Subheader2>
+        <p>{textDesc}</p>
+      </div>
+    </div>
+  )
+}
 
 function News() {
   const Container2 = [
-    tw`bg-neutral-400/40`,
+    tw`bg-neutral-300/60`,
     { ...globalPaddingVariants.classOffset },
   ]
 
   const HeaderX = tw(Header1)`mx-0 px-0 bg-transparent`
 
-  return (
-    //   .hero2 {
-    // width: 100vw;
-    // margin-left: -10vw;
-    // margin-right: -10vw;
-    // aspect-ratio: 10/2.5;
-    // padding: 1.25em 10vw 1.25em 10vw;
-    // background-color: lightgray;
-    // }
+  const ReadMoreLink = [
+    tw`uppercase text-neutral-900 font-semibold tracking-wide font-sansax transition-all duration-200 cursor-pointer h-min`,
+    tw`hover:(tracking-normal border-b border-current)`,
+  ]
 
+  return (
     <div css={Container2}>
       <Section>
-        <div className="news-flex">
+        <div className="flex justify-between">
           <HeaderX>News</HeaderX>
-          <div className="news-linker">Read more ➞</div>
+          <div css={ReadMoreLink}>Read more ➞</div>
         </div>
-        <div className="news-container">
-          <div className="news-item">
-            <div className="thirty">
-              <img src={SampleImage} className="news-image"></img>
-            </div>
-            <div className="seventy">
-              <h4>Title of Item</h4>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. A
-                quibusdam fuga rem veritatis! Rem facilis provident quidem
-                deserunt dolor veniam?
-              </p>
-            </div>
-          </div>
-          <div className="news-item">
-            <div className="thirty">
-              <img src={SampleImage} className="news-image"></img>
-            </div>
-            <div className="seventy">
-              <h4>Title of Item</h4>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. A
-                quibusdam fuga rem veritatis! Rem facilis provident quidem
-                deserunt dolor veniam?
-              </p>
-            </div>
-          </div>
-          <div className="news-item">
-            <div className="thirty">
-              <img src={SampleImage} className="news-image"></img>
-            </div>
-            <div className="seventy">
-              <h4>Title of Item</h4>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. A
-                quibusdam fuga rem veritatis! Rem facilis provident quidem
-                deserunt dolor veniam?
-              </p>
-            </div>
-          </div>
+        <div className="grid grid-cols-3 gap-6 mt-3">
+          <NewsItem
+            textTitle="Sample Item"
+            textDesc="Lorem ipsum dolor sit, amet consectetur adipisicing elit. A quibusdam fuga rem veritatis! Rem facilis provident quidem deserunt dolor veniam?"
+            imgPrev={SampleImage}
+          />
+          <NewsItem
+            textTitle="Sample Item"
+            textDesc="Lorem ipsum dolor sit, amet consectetur adipisicing elit. A quibusdam fuga rem veritatis! Rem facilis provident quidem deserunt dolor veniam?"
+            imgPrev={SampleImage}
+          />
+          <NewsItem
+            textTitle="Sample Item"
+            textDesc="Lorem ipsum dolor sit, amet consectetur adipisicing elit. A quibusdam fuga rem veritatis! Rem facilis provident quidem deserunt dolor veniam?"
+            imgPrev={SampleImage}
+          />
         </div>
       </Section>
     </div>

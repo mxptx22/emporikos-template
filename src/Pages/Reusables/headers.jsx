@@ -8,15 +8,19 @@ export const Header1 = styled.div([
   css`
     width: fit-content;
     position: relative;
-    & * {
+    & > * {
       position: relative;
-      top: -0.15rem;
+      top: -0.65rem;
     }
   `,
 ])
 
 export const Subheader1 = styled.div(
-  tw`text-4xl font-sansax tracking-wide font-semibold my-5`,
+  tw`text-3xl uppercase font-sansax tracking-wider font-semibold my-5`,
+)
+
+export const Subheader2 = styled.div(
+  tw`font-sansax text-xl font-semibold uppercase tracking-wider`,
 )
 
 export const Label = styled.div(

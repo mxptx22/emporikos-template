@@ -14,6 +14,10 @@ export const globalPaddingVariants = {
     marginLeft: '-' + globalPadding,
     marginRight: '-' + globalPadding,
   },
+  classCover: {
+    marginLeft: '-' + globalPadding,
+    marginRight: '-' + globalPadding,
+  },
 }
 
 const customStyles = css({

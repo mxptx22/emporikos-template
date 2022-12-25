@@ -1,8 +1,38 @@
+/** @jsxImportSource @emotion/react */
+import tw, { css, styled } from 'twin.macro'
+import { keyframes } from '@emotion/react'
+
 import React from 'react'
+import { globalPaddingVariants } from '../../../styles/GlobalStyles'
 import Hero1Vid from '../../../Images/hero1vid.mp4'
 import { ReactComponent as SmallLogotype } from '../../../Images/agencyidentifier.svg'
 
 function Hero() {
+  return (
+    <div
+      css={globalPaddingVariants.classCover}
+      className="h-screen md:h-[75vh] object-cover relative"
+    >
+      <video
+        className="h-full w-full object-cover absolute"
+        src={Hero1Vid}
+        autoPlay
+        loop
+        muted
+      ></video>
+      <div className="bg-secondary-600/50 h-full w-full absolute backdrop-blur-sm overflow-hidden">
+        <div className="h-3/4 w-full text-white absolute bottom-0 flex flex-col justify-end items-center gap-12 p-8">
+          <div className="text-5xl uppercase tracking-widest font-light">
+            We are the
+          </div>
+          <div className="text-9xl font-handwritten">digital trailblazers.</div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+const OldHero = () => {
   return (
     <div className="hero">
       <div className="herotextcontainer">

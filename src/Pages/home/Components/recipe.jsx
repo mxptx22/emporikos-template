@@ -1,23 +1,30 @@
+/** @jsxImportSource @emotion/react */
+import tw, { theme, styled } from 'twin.macro'
 import React from 'react'
-import { ReactComponent as Icon1 } from '../../../Images/icon1.svg'
-import { ReactComponent as Icon2 } from '../../../Images/icon2.svg'
-import { ReactComponent as Icon3 } from '../../../Images/icon3.svg'
-import { ReactComponent as Icon4 } from '../../../Images/icon4.svg'
-import { Header1 } from '../../Reusables/headers'
+import { Header1, Subheader2 } from '../../Reusables/headers'
 import { Section } from '../../Reusables/layout'
 import { BiCategoryAlt, BiCard, BiChart, BiRocket } from 'react-icons/bi'
+import Tilt from 'react-parallax-tilt'
 
 const Card = ({ header, description, icon }) => {
   return (
-    <div className="w-64 bg-neutral-300/50 text-center relative min-h-[8rem] p-4 pb-12 rounded-sm">
-      <div className="font-sansax text-xl font-semibold uppercase tracking-wider">
-        {header}
+    <Tilt
+      scale={1.1}
+      tiltMaxAngleX={15}
+      tiltMaxAngleY={5}
+      glareEnable={true}
+      glareColor={theme('colors.neutral.500')}
+      glareMaxOpacity={0.6}
+      glarePosition="all"
+    >
+      <div className="w-64 bg-neutral-300/50 text-center relative min-h-[8rem] p-4 pb-12 rounded-sm cursor-default">
+        <Subheader2>{header}</Subheader2>
+        <div>{description}</div>
+        <div className="text-neutral-400 w-16 aspect-square absolute bottom-0 left-0 -z-10">
+          {icon}
+        </div>
       </div>
-      <div>{description}</div>
-      <div className="text-neutral-400 w-16 aspect-square absolute bottom-0 left-0 -z-10">
-        {icon}
-      </div>
-    </div>
+    </Tilt>
   )
 }
 
@@ -41,61 +48,48 @@ function Recipe() {
         et dignissimos corrupti voluptas?
       </p>
       <div className="flex justify-center">
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid grid-cols-4 gap-7">
           <Card
-            header="We Do This"
+            header="Eat"
             description="Lorem ipsum dolor sit amet."
             icon={<BiCategoryAlt className="w-full h-full" />}
           />
           <Card
-            header="We Do This"
+            header="Sleep"
             description="Lorem ipsum dolor sit amet."
             icon={<BiCard className="w-full h-full" />}
           />
           <Card
-            header="We Do This"
+            header="Knit"
             description="Lorem ipsum dolor sit amet."
             icon={<BiChart className="w-full h-full" />}
           />
           <Card
-            header="We Do This"
+            header="Repeat"
             description="Lorem ipsum dolor sit amet."
             icon={<BiRocket className="w-full h-full" />}
           />
         </div>
       </div>
-      {/* <div className="rectdata-container margin-small">
-        <div className="rectdata accent1">
-          <div className="rectdata-text">
-            <h3>We Do This</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <Icon1 className="recticon" />
-        </div>
-        <div className="rectdata accent2">
-          <div className="rectdata-text">
-            <h3>We Do This</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <Icon2 className="recticon" />
-        </div>
-        <div className="rectdata accent1">
-          <div className="rectdata-text">
-            <h3>We Do This</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <Icon3 className="recticon" />
-        </div>
-        <div className="rectdata accent2">
-          <div className="rectdata-text">
-            <h3>We Do This</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <Icon4 className="recticon" />
-        </div>
-      </div> */}
     </Section>
   )
 }
+
+// MEMO Consider creating previews for each of the cards in this section
+// const OpenUp = keyframes`
+// from {
+//   height: 0px;
+// }
+
+// to {
+//   height: 200px;
+// }
+// `
+
+// const PreviewStyling = css`
+//   animation: ${OpenUp} 1s ease;
+//   height: 150px;
+//   ${tw`bg-primary`}
+// `
 
 export default Recipe
