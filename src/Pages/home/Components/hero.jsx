@@ -21,11 +21,13 @@ function Hero() {
         muted
       ></video>
       <div className="bg-secondary-600/50 h-full w-full absolute backdrop-blur-sm overflow-hidden">
-        <div className="h-3/4 w-full text-white absolute bottom-0 flex flex-col justify-end items-center gap-12 p-8">
-          <div className="text-5xl uppercase tracking-widest font-light">
+        <div className="h-3/4 w-full text-white text-center absolute bottom-0 flex flex-col justify-center md:justify-end items-center gap-4 md:gap-12 p-8">
+          <div className="text-2xl md:text-5xl uppercase tracking-widest font-light">
             We are the
           </div>
-          <div className="text-9xl font-handwritten">digital trailblazers.</div>
+          <div className="text-7xl md:text-9xl leading-snug md:leading-none font-handwritten">
+            digital trailblazers.
+          </div>
         </div>
       </div>
     </div>
