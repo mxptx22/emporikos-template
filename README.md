@@ -1,6 +1,6 @@
 # Emporikos Template
 
-<p style="text-align:center">
+<p align="center">
   <img src="https://i.postimg.cc/tJrvXh9V/Emporikos-Logo.png">
 </p>
 
