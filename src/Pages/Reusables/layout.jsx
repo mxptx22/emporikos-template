@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import tw, { css, styled } from 'twin.macro'
-import { globalPadding, globalPaddingVariants } from '../../styles/GlobalStyles'
+import { globalPaddingVariants } from '../../styles/GlobalStyles'
 import React from 'react'
 import Contact from './contact'
 

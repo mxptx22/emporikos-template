@@ -5,12 +5,16 @@ import { Header1, Label } from '../../Reusables/headers'
 import { Section } from '../../Reusables/layout'
 
 export const TableCell = ({ textHighlight = '', textLabel = '' }) => {
-  const TableContainer = styled.div(tw`border-b border-primary-700 py-4 w-56`)
-  const TableAccent = styled.div(tw`text-7xl font-handwritten leading-[0.8]`)
+  const TableContainer = styled.div(
+    tw`border-b border-primary-700 py-4 w-full md:w-56 h-full`,
+  )
+  const TableAccent = styled.div(
+    tw`text-3xl md:text-7xl font-handwritten sm:leading-[0.8]`,
+  )
   return (
     <TableContainer>
       <TableAccent>{textHighlight}</TableAccent>
-      <Label>{textLabel}</Label>
+      <Label tw="text-xs md:text-xl">{textLabel}</Label>
     </TableContainer>
   )
 }

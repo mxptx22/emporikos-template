@@ -2,24 +2,35 @@ import { Global, css } from '@emotion/react'
 import styled from '@emotion/styled'
 import tw, { theme, GlobalStyles as BaseStyles } from 'twin.macro'
 
-export const globalPaddingMini = theme('spacing.2')
+export const globalPaddingXS = theme('spacing.2')
+export const globalPaddingSM = theme('spacing.14')
 export const globalPadding = theme('spacing.28')
 
 export const globalPaddingVariants = {
   class: {
-    paddingLeft: globalPaddingMini,
-    paddingRight: globalPaddingMini,
-    [`@media(min-width: ${theme('screens.md')})`]: {
+    paddingLeft: globalPaddingXS,
+    paddingRight: globalPaddingXS,
+    [`@media(min-width: ${theme('screens.sm')})`]: {
+      paddingLeft: globalPaddingSM,
+      paddingRight: globalPaddingSM,
+    },
+    [`@media(min-width: ${theme('screens.lg')})`]: {
       paddingLeft: globalPadding,
       paddingRight: globalPadding,
     },
   },
   classOffset: {
-    paddingLeft: globalPaddingMini,
-    paddingRight: globalPaddingMini,
-    marginLeft: '-' + globalPaddingMini,
-    marginRight: '-' + globalPaddingMini,
-    [`@media(min-width: ${theme('screens.md')})`]: {
+    paddingLeft: globalPaddingXS,
+    paddingRight: globalPaddingXS,
+    marginLeft: '-' + globalPaddingXS,
+    marginRight: '-' + globalPaddingXS,
+    [`@media(min-width: ${theme('screens.sm')})`]: {
+      paddingLeft: globalPaddingSM,
+      paddingRight: globalPaddingSM,
+      marginLeft: '-' + globalPaddingSM,
+      marginRight: '-' + globalPaddingSM,
+    },
+    [`@media(min-width: ${theme('screens.lg')})`]: {
       paddingLeft: globalPadding,
       paddingRight: globalPadding,
       marginLeft: '-' + globalPadding,
@@ -27,9 +38,13 @@ export const globalPaddingVariants = {
     },
   },
   classCover: {
-    marginLeft: '-' + globalPaddingMini,
-    marginRight: '-' + globalPaddingMini,
-    [`@media(min-width: ${theme('screens.md')})`]: {
+    marginLeft: '-' + globalPaddingXS,
+    marginRight: '-' + globalPaddingXS,
+    [`@media(min-width: ${theme('screens.sm')})`]: {
+      marginLeft: '-' + globalPaddingSM,
+      marginRight: '-' + globalPaddingSM,
+    },
+    [`@media(min-width: ${theme('screens.lg')})`]: {
       marginLeft: '-' + globalPadding,
       marginRight: '-' + globalPadding,
     },
@@ -37,9 +52,12 @@ export const globalPaddingVariants = {
 }
 
 const customStyles = css({
-  body: {
-    color: theme('colors.neutral.900'),
-  },
+  body: [
+    tw`text-base md:text-xl`,
+    {
+      color: theme('colors.neutral.900'),
+    },
+  ],
   input: [
     tw`my-0 text-xl bg-transparent border-solid border border-current rounded-none w-full p-2 uppercase font-thin tracking-wide`,
   ],

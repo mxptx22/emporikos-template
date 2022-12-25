@@ -17,7 +17,7 @@ const Card = ({ header, description, icon }) => {
       glareMaxOpacity={0.6}
       glarePosition="all"
     >
-      <div className="w-64 bg-neutral-300/50 text-center relative min-h-[8rem] p-4 pb-12 rounded-sm cursor-default">
+      <div className="w-48 xl:w-64 bg-neutral-300/50 text-center relative min-h-[8rem] p-4 pb-12 rounded-sm cursor-default">
         <Subheader2>{header}</Subheader2>
         <div>{description}</div>
         <div className="text-neutral-400 w-16 aspect-square absolute bottom-0 left-0 -z-10">
@@ -34,7 +34,7 @@ function Recipe() {
       <Header1>
         <span>Our Recipe for Success</span>
       </Header1>
-      <p className="columns-2 mb-12 text-justify">
+      <p className="md:columns-2 mb-12 text-justify">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas
         molestias ab laborum deserunt eum corrupti! Et illo mollitia error. Iste
         molestias praesentium odio quia harum. Quas nam vero distinctio, maxime
@@ -48,7 +48,7 @@ function Recipe() {
         et dignissimos corrupti voluptas?
       </p>
       <div className="flex justify-center">
-        <div className="grid grid-cols-4 gap-7">
+        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-7">
           <Card
             header="Eat"
             description="Lorem ipsum dolor sit amet."
