@@ -1,6 +1,10 @@
 # Emporikos Template
 
-<!-- FIXME Screenshot -->
+<p style="text-align:center">
+  <img src="https://i.postimg.cc/tJrvXh9V/Emporikos-Logo.png">
+</p>
+
+<!-- FIXME Screenshots?? -->
 
 > Website Template focused on bringing your brand closer to your clients - professionalism with an elegant twist.
 
@@ -8,10 +12,6 @@ Built with **React** and implementing **TailwindCSS** wth **Twin.macro**, this t
 
 ## See the Demo
 
-The demo is accessible at .
-
-<!-- FIXME WHERE & MAKE LINK -->
-
-<!-- FIXME Add logo bc why not hehe -->
+The demo is accessible [here.](https://mxptx22.github.io/emporikos-template/).
 
 The demo was built for a fictional digital agency named Agencyname.
