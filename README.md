@@ -13,6 +13,6 @@ Built with **React** and implementing **TailwindCSS** wth **Twin.macro**, this t
 
 ## See the Demo
 
-The demo is accessible [here.](https://mxptx22.github.io/emporikos-template/).
+The demo is accessible [here](https://mxptx22.github.io/emporikos-template/).
 
 The demo was built for a fictional digital agency named Agencyname.

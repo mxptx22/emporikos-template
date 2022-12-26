@@ -9,7 +9,7 @@ export const TableCell = ({ textHighlight = '', textLabel = '' }) => {
     tw`border-b border-primary-700 py-4 w-full md:w-56 h-full`,
   )
   const TableAccent = styled.div(
-    tw`text-3xl md:text-7xl font-handwritten sm:leading-[0.8]`,
+    tw`text-3xl md:text-7xl font-handwritten text-black/80 sm:leading-[0.8]`,
   )
   return (
     <TableContainer>
@@ -41,7 +41,7 @@ function ExpStats() {
         <span>Years of Experience</span>
       </Header1>
       <div
-        className="grid w-full grid-cols-3 gap-3 text-center mt-6 py-12 place-items-center transition-all duration-1000"
+        className="grid w-full grid-cols-3 gap-3 text-center my-6 md:mb-8 md:mt-16 place-items-center transition-all duration-1000"
         style={{ filter: tableLook }}
       >
         <TableCell textHighlight="2 mil" textLabel="Clients Worldwide" />

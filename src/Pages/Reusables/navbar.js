@@ -47,7 +47,6 @@ function Navbar({ passClass = NavbarStyles.condensed }) {
               showBigMenu()
             }}
           >
-            {/* FIXME React Icons */}
             {bigMenu === 'no' && <BsList className="" />}
             {bigMenu === 'yes' && <BsX className="" />}
           </div>
@@ -92,7 +91,6 @@ ${tw`bg-neutral-200/40 backdrop-blur-lg`}
 
   return (
     <>
-      {/* FIXME keyframes & animation from blurred-back */}
       <div css={HMenuBackdrop}>
         <div css={HMenuContainer}>
           <div className="flex flex-col items-center justify-center pt-24 text-3xl gap-5 h-full">

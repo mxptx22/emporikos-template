@@ -71,7 +71,7 @@ function Contact() {
               <Label>E-mail</Label>
               <input />
               <Label>Message</Label>
-              <textarea />
+              <textarea className="h-28" />
               <ButtonPrimary css={ButtonAdjustments}>
                 <span>Send</span>
               </ButtonPrimary>
