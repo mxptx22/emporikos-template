@@ -4,29 +4,43 @@
   "homepage": "https://mxptx22.github.io/emporikos-template",
   "private": true,
   "dependencies": {
-    "@fontsource/khula": "^4.5.8",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.3.0",
-    "@testing-library/user-event": "^13.5.0",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@fontsource/aileron": "^4.5.3",
+    "@fontsource/assistant": "^4.5.11",
+    "@fontsource/bitter": "^4.5.10",
+    "@fontsource/commissioner": "^4.5.9",
+    "@fontsource/el-messiri": "^4.5.11",
+    "@fontsource/la-belle-aurore": "^4.5.11",
+    "@fontsource/raleway": "^4.5.11",
+    "@fontsource/saira": "^4.5.11",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.10",
     "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "react-icons": "^4.7.1",
+    "react-parallax-tilt": "^1.7.78",
+    "react-scripts": "^5.0.1",
+    "react-scroll-trigger": "^0.6.14",
+    "tailwindcss-palette-generator": "^0.2.5"
+  },
+  "babelMacros": {
+    "twin": {
+      "preset": "emotion"
+    }
   },
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "devDependencies": {
+    "tailwindcss": "^3.2.4",
+    "twin.macro": "^3.1.0"
   },
   "browserslist": {
     "production": [
