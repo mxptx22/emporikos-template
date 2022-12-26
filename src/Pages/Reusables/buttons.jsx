@@ -2,7 +2,7 @@
 import tw, { css, styled } from 'twin.macro'
 
 export const ButtonPrimary = styled.a([
-  tw`flex justify-center items-center gap-1 w-fit text-2xl cursor-pointer relative uppercase tracking-wider font-light px-3 py-2`,
+  tw`flex justify-center items-center gap-1 w-fit text-lg md:text-2xl cursor-pointer relative uppercase tracking-wider font-light px-1.5 py-1 md:px-3 md:py-2`,
   ,
   css`
     &:before {
@@ -23,4 +23,4 @@ export const ButtonPrimary = styled.a([
   `,
 ])
 
-export const ButtonSocial = tw(ButtonPrimary)`aspect-square`
+export const ButtonSocial = tw(ButtonPrimary)`aspect-square px-3 py-2`

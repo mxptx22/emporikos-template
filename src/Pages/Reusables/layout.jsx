@@ -6,7 +6,7 @@ import Contact from './contact'
 
 export function Section({ children }) {
   const ptOffset = [
-    tw`py-14`,
+    tw`py-4 sm:py-10 md:py-14`,
     css`
       & > *:first-child {
         padding-top: 0;
