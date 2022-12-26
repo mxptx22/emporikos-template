@@ -26,3 +26,8 @@ export const Subheader2 = styled.div(
 export const Label = styled.div(
   tw`font-sans tracking-wider uppercase font-extralight`,
 )
+
+export const ALink = styled.a([
+  tw`uppercase text-neutral-900 font-semibold tracking-wide transition-all duration-200 cursor-pointer h-min`,
+  tw`hover:(border-b border-current)`,
+])

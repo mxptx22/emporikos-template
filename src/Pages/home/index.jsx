@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Navbar from '../../Navbar'
 import { useRef, useState, useEffect } from 'react'
+import Navbar from '../Reusables/navbar'
 import Layout from '../Reusables/layout'
 import Hero from './Components/hero'
 import Recipe from './Components/recipe'
@@ -9,19 +9,20 @@ import Appeal from './Components/appeal'
 import News from './Components/news'
 import ExpStats from './Components/expstats'
 import NewAppAttn from './Components/newapp'
+import { NavbarStyles } from '../Reusables/navbar'
 
 function Home() {
   const startRef = useRef()
-  const [navbarLook, setNavbarLook] = useState('navbar navbar-initial')
+  const [navbarLook, setNavbarLook] = useState(NavbarStyles.condensed)
 
   useEffect(() => {
     const pastWelcome = startRef.current.offsetTop
     const handleScroll = event => {
       if (window.scrollY < pastWelcome) {
-        setNavbarLook('navbar navbar-initial')
+        setNavbarLook(NavbarStyles.condensed)
       }
       if (window.scrollY > pastWelcome) {
-        setNavbarLook('navbar')
+        setNavbarLook(NavbarStyles.expanded)
       }
     }
     window.addEventListener('scroll', handleScroll)
