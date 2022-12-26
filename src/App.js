@@ -21,7 +21,6 @@ import '@fontsource/raleway/700.css'
 import '@fontsource/raleway/800.css'
 
 import '@fontsource/bitter'
-import '@fontsource/commissioner'
 import '@fontsource/la-belle-aurore'
 
 import '@fontsource/el-messiri/400.css'
