@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/emporikos-template/static/css/main.8d7a8728.css",
-    "main.js": "/emporikos-template/static/js/main.b80883f0.js",
+    "main.css": "/emporikos-template/static/css/main.da72e76b.css",
+    "main.js": "/emporikos-template/static/js/main.50283fee.js",
     "static/media/hero1vid.mp4": "/emporikos-template/static/media/hero1vid.4894d95a6f56560ccfb3.mp4",
-    "static/media/commissioner-all-400-normal.woff": "/emporikos-template/static/media/commissioner-all-400-normal.0931a06dc21083ea1cba.woff",
     "static/media/raleway-all-700-normal.woff": "/emporikos-template/static/media/raleway-all-700-normal.42089e13b4274eeece4b.woff",
     "static/media/raleway-all-600-normal.woff": "/emporikos-template/static/media/raleway-all-600-normal.e9a98c9a0c352c633ffc.woff",
     "static/media/raleway-all-800-normal.woff": "/emporikos-template/static/media/raleway-all-800-normal.113da776dc3f801f401f.woff",
@@ -14,14 +13,10 @@
     "static/media/raleway-all-500-normal.woff": "/emporikos-template/static/media/raleway-all-500-normal.450cf69675e5ada80d0a.woff",
     "static/media/raleway-all-100-normal.woff": "/emporikos-template/static/media/raleway-all-100-normal.d783306322dcc53ce062.woff",
     "static/media/sampleimage.png": "/emporikos-template/static/media/sampleimage.8741407aee900b136f74.png",
-    "static/media/commissioner-latin-400-normal.woff2": "/emporikos-template/static/media/commissioner-latin-400-normal.9856909c433f4596f031.woff2",
     "static/media/el-messiri-all-600-normal.woff": "/emporikos-template/static/media/el-messiri-all-600-normal.f4a8023a3ba12f964f47.woff",
     "static/media/el-messiri-all-500-normal.woff": "/emporikos-template/static/media/el-messiri-all-500-normal.706618888f2b770d0d16.woff",
     "static/media/el-messiri-all-700-normal.woff": "/emporikos-template/static/media/el-messiri-all-700-normal.92d020e5b01f88f25d18.woff",
     "static/media/el-messiri-all-400-normal.woff": "/emporikos-template/static/media/el-messiri-all-400-normal.2a6ddda714b383a18af7.woff",
-    "static/media/commissioner-cyrillic-ext-400-normal.woff2": "/emporikos-template/static/media/commissioner-cyrillic-ext-400-normal.94a4409b931aabee3634.woff2",
-    "static/media/commissioner-latin-ext-400-normal.woff2": "/emporikos-template/static/media/commissioner-latin-ext-400-normal.f2ad006231a800499dd0.woff2",
-    "static/media/commissioner-cyrillic-400-normal.woff2": "/emporikos-template/static/media/commissioner-cyrillic-400-normal.59f7136fb4e22699ec3b.woff2",
     "static/media/la-belle-aurore-all-400-normal.woff": "/emporikos-template/static/media/la-belle-aurore-all-400-normal.68be3bd58258f1c49a7a.woff",
     "static/media/assistant-all-400-normal.woff": "/emporikos-template/static/media/assistant-all-400-normal.1cb314cfd3747275ccc6.woff",
     "static/media/assistant-all-700-normal.woff": "/emporikos-template/static/media/assistant-all-700-normal.dae6b8eab10af544edf5.woff",
@@ -38,7 +33,6 @@
     "static/media/raleway-latin-200-normal.woff2": "/emporikos-template/static/media/raleway-latin-200-normal.d8cbbeee95cccd59fb14.woff2",
     "static/media/raleway-latin-500-normal.woff2": "/emporikos-template/static/media/raleway-latin-500-normal.c589c500f24e5f3f7e61.woff2",
     "static/media/raleway-latin-100-normal.woff2": "/emporikos-template/static/media/raleway-latin-100-normal.f2b7c929df55053b907a.woff2",
-    "static/media/commissioner-greek-400-normal.woff2": "/emporikos-template/static/media/commissioner-greek-400-normal.470b554311358ba678a1.woff2",
     "static/media/la-belle-aurore-latin-400-normal.woff2": "/emporikos-template/static/media/la-belle-aurore-latin-400-normal.2a89aebf652f3b0aae99.woff2",
     "static/media/bitter-latin-400-normal.woff2": "/emporikos-template/static/media/bitter-latin-400-normal.22fec20eb5052f08e772.woff2",
     "static/media/raleway-latin-ext-600-normal.woff2": "/emporikos-template/static/media/raleway-latin-ext-600-normal.2fe3297f1c332c9a0558.woff2",
@@ -71,7 +65,6 @@
     "static/media/raleway-cyrillic-200-normal.woff2": "/emporikos-template/static/media/raleway-cyrillic-200-normal.76c83c39f28f6d1473ef.woff2",
     "static/media/bitter-cyrillic-ext-400-normal.woff2": "/emporikos-template/static/media/bitter-cyrillic-ext-400-normal.9eaf2aff7ed669b01e09.woff2",
     "static/media/raleway-cyrillic-100-normal.woff2": "/emporikos-template/static/media/raleway-cyrillic-100-normal.5a7b974bdf70619f1a0c.woff2",
-    "static/media/commissioner-vietnamese-400-normal.woff2": "/emporikos-template/static/media/commissioner-vietnamese-400-normal.27059f37cf2d20363505.woff2",
     "static/media/assistant-latin-400-normal.woff2": "/emporikos-template/static/media/assistant-latin-400-normal.6d675450fe85a95c9547.woff2",
     "static/media/assistant-latin-300-normal.woff2": "/emporikos-template/static/media/assistant-latin-300-normal.16f4f4d228ede7df1058.woff2",
     "static/media/assistant-latin-500-normal.woff2": "/emporikos-template/static/media/assistant-latin-500-normal.eae6f37ba4a474c216ac.woff2",
@@ -117,11 +110,11 @@
     "static/media/el-messiri-latin-ext-700-normal.woff2": "/emporikos-template/static/media/el-messiri-latin-ext-700-normal.0cb3cac782be1901b5a0.woff2",
     "static/media/el-messiri-latin-ext-400-normal.woff2": "/emporikos-template/static/media/el-messiri-latin-ext-400-normal.696be59048ec3e808d8b.woff2",
     "index.html": "/emporikos-template/index.html",
-    "main.8d7a8728.css.map": "/emporikos-template/static/css/main.8d7a8728.css.map",
-    "main.b80883f0.js.map": "/emporikos-template/static/js/main.b80883f0.js.map"
+    "main.da72e76b.css.map": "/emporikos-template/static/css/main.da72e76b.css.map",
+    "main.50283fee.js.map": "/emporikos-template/static/js/main.50283fee.js.map"
   },
   "entrypoints": [
-    "static/css/main.8d7a8728.css",
-    "static/js/main.b80883f0.js"
+    "static/css/main.da72e76b.css",
+    "static/js/main.50283fee.js"
   ]
 }
