@@ -6,20 +6,16 @@ import iPhone from '../../../Images/iphone.png'
 import { Header1 } from '../../Reusables/headers'
 import { Section } from '../../Reusables/layout'
 import { ButtonPrimary } from '../../Reusables/buttons'
+import { useScrollEffect } from '../../Reusables/hooks'
 
 function NewAppAttn() {
   const phoneRef = useRef()
-  const [phoneLook, setPhoneLook] = useState('translateX(200%)')
 
-  useEffect(() => {
-    const pastApp = phoneRef.current.offsetTop - window.innerHeight / 2
-    const handleScroll = event => {
-      window.scrollY > pastApp
-        ? setPhoneLook('translateX(0%)')
-        : setPhoneLook('translateX(200%)')
-    }
-    window.addEventListener('scroll', handleScroll)
-  }, [])
+  const RevealEffect = useScrollEffect(
+    phoneRef,
+    'translateX(200%)',
+    'translateX(0%)',
+  )
 
   return (
     <Section>
@@ -49,7 +45,7 @@ function NewAppAttn() {
         <div className="hidden md:block md:w-1/3">
           <img
             src={iPhone}
-            style={{ transform: phoneLook, transition: 'all 1s' }}
+            style={{ transform: RevealEffect, transition: 'all 1s' }}
           ></img>
         </div>
       </div>
