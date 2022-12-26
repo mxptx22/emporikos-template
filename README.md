@@ -4,7 +4,7 @@
   <img src="https://i.postimg.cc/tJrvXh9V/Emporikos-Logo.png">
 </p>
 <p align="center">
-  <img src="https://i.postimg.cc/L8MJLB0t/Screenshot-2022-12-26-at-15-57-34.png">
+  <img src="https://i.postimg.cc/TY23vV30/Screenshot-2022-12-26-at-16-45-44.png">
 </p>
 
 > Website Template focused on bringing your brand closer to your clients - professionalism with an elegant twist.
