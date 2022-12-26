@@ -14,7 +14,7 @@ export const NavbarStyles = {
     'fixed z-40 min-h-[2rem] bg-neutral-50 py-2 px-4 shadow-md transition-all duration-500 rounded-md mt-4 w-[88vw]  ml-[6vw] mr-[6vw] ',
 }
 
-function Navbar({ passClass = NavbarStyles.condensed }) {
+function Navbar() {
   const [bigMenu, determineBigMenu] = useState('no')
   const showBigMenu = () => {
     if (bigMenu === 'no') {
@@ -29,29 +29,29 @@ function Navbar({ passClass = NavbarStyles.condensed }) {
   return (
     <>
       {bigMenu === 'yes' && <BigMenu />}
-      <div className={passClass}>
-        <div className="flex justify-between items-center p-2 w-full">
-          <BigLogotype className="h-8 md:h-9" />
+      {/* <div className={passClass}> */}
+      <div className="flex justify-between items-center p-2 w-full">
+        <BigLogotype className="h-8 md:h-9" />
 
-          <div className="hidden md:flex gap-6">
-            <ALink>Home</ALink>
-            <ALink>About</ALink>
-            <ALink>Services</ALink>
-            <ALink>Contact</ALink>
-          </div>
+        <div className="hidden md:flex gap-6">
+          <ALink>Home</ALink>
+          <ALink>About</ALink>
+          <ALink>Services</ALink>
+          <ALink>Contact</ALink>
+        </div>
 
-          <div
-            ref={hamburgerMenuRef}
-            className="inline-block md:hidden text-4xl cursor-pointer"
-            onClick={() => {
-              showBigMenu()
-            }}
-          >
-            {bigMenu === 'no' && <BsList className="" />}
-            {bigMenu === 'yes' && <BsX className="" />}
-          </div>
+        <div
+          ref={hamburgerMenuRef}
+          className="inline-block md:hidden text-4xl cursor-pointer"
+          onClick={() => {
+            showBigMenu()
+          }}
+        >
+          {bigMenu === 'no' && <BsList className="" />}
+          {bigMenu === 'yes' && <BsX className="" />}
         </div>
       </div>
+      {/* </div> */}
     </>
   )
 }

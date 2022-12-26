@@ -22,7 +22,9 @@ export const TableCell = ({ textHighlight = '', textLabel = '' }) => {
 
 function ExpStats() {
   const tableRef = useRef()
-
+  /**
+   * @const {string} RevealEffect - The result of the useScrollEffect hook - here it determines the intensity of the blur effect
+   */
   const RevealEffect = useScrollEffect(tableRef, 'blur(2px)', 'blur(0px)')
 
   return (

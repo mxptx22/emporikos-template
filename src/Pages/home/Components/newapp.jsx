@@ -11,6 +11,9 @@ import { useScrollEffect } from '../../Reusables/hooks'
 function NewAppAttn() {
   const phoneRef = useRef()
 
+  /**
+   * @const {string} RevealEffect - The result of the useScrollEffect hook - here it determines the position of the phone frame
+   */
   const RevealEffect = useScrollEffect(
     phoneRef,
     'translateX(200%)',

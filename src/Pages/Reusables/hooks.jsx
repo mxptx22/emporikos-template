@@ -1,15 +1,23 @@
 import React, { useState, useEffect } from 'react'
 
 /**
- * @param {React.MutableRefObject<undefined>} refElement The ref element used as reference for trigger point
- * @param {string} stateBefore The desired style (as string) before reaching the trigger point
- * @param {string} stateAfter The desired style (as string) upon reaching the trigger point
+ * @param {React.MutableRefObject<undefined>} refElement - The ref element used as reference for trigger point
+ * @param {string} stateBefore - The desired style (as string) before reaching the trigger point
+ * @param {string} stateAfter - The desired style (as string) upon reaching the trigger point
  */
-export function useScrollEffect(refElement, stateBefore, stateAfter) {
+export function useScrollEffect(refElement, stateBefore = '', stateAfter = '') {
   const [currentLook, newLook] = useState(stateBefore)
 
   useEffect(() => {
-    const pastRef = refElement.current.offsetTop - window.innerHeight / 2
+    /**
+     * @const pastRef - Point past which the animation is to be executed
+     *
+     * - If refElement is passed -> It will subtract half of window height to make sure the animation is visible to visitor
+     * - If refElement is omitted (undefined) -> It will execute the animation upon scrolling past half of window height - Useful for Navbar, considering how widely it is reused as element and accidental omissions are a possibility
+     */
+    const pastRef = refElement
+      ? refElement.current.offsetTop - window.innerHeight / 2
+      : window.innerHeight / 2
     const handleScroll = event => {
       window.scrollY > pastRef ? newLook(stateAfter) : newLook(stateBefore)
     }
