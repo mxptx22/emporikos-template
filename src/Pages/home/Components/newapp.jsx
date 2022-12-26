@@ -1,7 +1,8 @@
 /** @jsxImportSource @emotion/react */
 import tw, { css, styled } from 'twin.macro'
-
 import React, { useState, useEffect, useRef } from 'react'
+import { useScrollEffect } from '../../Reusables/hooks'
+
 import iPhone from '../../../Images/iphone.png'
 import { Header1 } from '../../Reusables/headers'
 import { Section } from '../../Reusables/layout'
@@ -9,17 +10,15 @@ import { ButtonPrimary } from '../../Reusables/buttons'
 
 function NewAppAttn() {
   const phoneRef = useRef()
-  const [phoneLook, setPhoneLook] = useState('translateX(200%)')
 
-  useEffect(() => {
-    const pastApp = phoneRef.current.offsetTop - window.innerHeight / 2
-    const handleScroll = event => {
-      window.scrollY > pastApp
-        ? setPhoneLook('translateX(0%)')
-        : setPhoneLook('translateX(200%)')
-    }
-    window.addEventListener('scroll', handleScroll)
-  }, [])
+  /**
+   * @const {string} RevealEffect - The result of the useScrollEffect hook - here it determines the position of the phone frame
+   */
+  const RevealEffect = useScrollEffect(
+    phoneRef,
+    'translateX(200%)',
+    'translateX(0%)',
+  )
 
   return (
     <Section>
@@ -49,7 +48,7 @@ function NewAppAttn() {
         <div className="hidden md:block md:w-1/3">
           <img
             src={iPhone}
-            style={{ transform: phoneLook, transition: 'all 1s' }}
+            style={{ transform: RevealEffect, transition: 'all 1s' }}
           ></img>
         </div>
       </div>

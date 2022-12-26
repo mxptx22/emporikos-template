@@ -1,6 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import tw, { theme, styled } from 'twin.macro'
-import React, { useRef, useState, useEffect } from 'react'
+import React, { useRef } from 'react'
+import { useScrollEffect } from '../../Reusables/hooks'
 import { Header1, Label } from '../../Reusables/headers'
 import { Section } from '../../Reusables/layout'
 
@@ -9,7 +10,7 @@ export const TableCell = ({ textHighlight = '', textLabel = '' }) => {
     tw`border-b border-primary-700 py-4 w-full md:w-56 h-full`,
   )
   const TableAccent = styled.div(
-    tw`text-3xl md:text-7xl font-handwritten sm:leading-[0.8]`,
+    tw`text-3xl md:text-7xl font-handwritten text-black/80 sm:leading-[0.8]`,
   )
   return (
     <TableContainer>
@@ -21,18 +22,10 @@ export const TableCell = ({ textHighlight = '', textLabel = '' }) => {
 
 function ExpStats() {
   const tableRef = useRef()
-  const [tableLook, setTableLook] = useState('blur(2px)')
-
-  // FIXME Create a custom hook later on
-  useEffect(() => {
-    const pastTable = tableRef.current.offsetTop - window.innerHeight / 2
-    const handleScroll = event => {
-      window.scrollY > pastTable
-        ? setTableLook('blur(0px)')
-        : setTableLook('blur(2px)')
-    }
-    window.addEventListener('scroll', handleScroll)
-  }, [])
+  /**
+   * @const {string} RevealEffect - The result of the useScrollEffect hook - here it determines the intensity of the blur effect
+   */
+  const RevealEffect = useScrollEffect(tableRef, 'blur(2px)', 'blur(0px)')
 
   return (
     <Section>
@@ -41,8 +34,8 @@ function ExpStats() {
         <span>Years of Experience</span>
       </Header1>
       <div
-        className="grid w-full grid-cols-3 gap-3 text-center mt-6 py-12 place-items-center transition-all duration-1000"
-        style={{ filter: tableLook }}
+        className="grid w-full grid-cols-3 gap-3 text-center my-6 md:mb-8 md:mt-16 place-items-center transition-all duration-1000"
+        style={{ filter: RevealEffect }}
       >
         <TableCell textHighlight="2 mil" textLabel="Clients Worldwide" />
         <TableCell textHighlight="99%" textLabel="Satisfaction Rate" />

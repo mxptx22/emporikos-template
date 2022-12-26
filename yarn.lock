@@ -1311,11 +1311,6 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@fontsource/aileron@^4.5.3":
-  version "4.5.3"
-  resolved "https://registry.yarnpkg.com/@fontsource/aileron/-/aileron-4.5.3.tgz#cc6b1f1fe5505d4a83acccd909f3858c67224dd8"
-  integrity sha512-pFqJqwhvNSb5bkrMRCJ66eyxtosPtR0THTfti6l1sl9vBWs7kQlu0mzXPdqr9qyLy82OnzsQhBGYCBszbbiV/w==
-
 "@fontsource/assistant@^4.5.11":
   version "4.5.11"
   resolved "https://registry.yarnpkg.com/@fontsource/assistant/-/assistant-4.5.11.tgz#26c6d832c9d79c930de00d0fde594230b5390393"
@@ -1325,11 +1320,6 @@
   version "4.5.10"
   resolved "https://registry.yarnpkg.com/@fontsource/bitter/-/bitter-4.5.10.tgz#5c3e269ead5eb10ef8c86218382b89d6a637d4f1"
   integrity sha512-iKpM2qm8V1rUfASFG2GtgdmdAFxmZ1uN6SIYMx+C84X56CbZX369HFwaykrZCeTSMAH4uEKOVHCbE7nc4BJGlA==
-
-"@fontsource/commissioner@^4.5.9":
-  version "4.5.9"
-  resolved "https://registry.yarnpkg.com/@fontsource/commissioner/-/commissioner-4.5.9.tgz#224903e88fb3ee2f3d407e5fd933704d44fcd419"
-  integrity sha512-gApIMZJIBhKncKVZtc98kpzSl4hp0fyBUN9+fbK62vTBMRUJAjkdIHwo60W36gCztYHgGsxXVwrzKEdiTC1pow==
 
 "@fontsource/el-messiri@^4.5.11":
   version "4.5.11"
@@ -1345,11 +1335,6 @@
   version "4.5.11"
   resolved "https://registry.yarnpkg.com/@fontsource/raleway/-/raleway-4.5.11.tgz#6da0bad1f44e0360fe465663ac0683601d29bda7"
   integrity sha512-WrFuS5q3tPqNci4iDwIf7lnkHY5jrkWswy6B007W//cAB7Iiw2NuxBNxrCetYpe3efPbEoFPcoKeTPqDzoWQ3A==
-
-"@fontsource/saira@^4.5.11":
-  version "4.5.11"
-  resolved "https://registry.yarnpkg.com/@fontsource/saira/-/saira-4.5.11.tgz#0900c5b6bd44ad4c20c55ad19f4e5dba546fdb25"
-  integrity sha512-N61dBsPVvfmybGDZxe3YE4OhCXiq7wYgzArxNiCyGCpQz0Q+MEy2BN42jtvz4gqwVDCqvKVQMDD2I+b10kZ2BQ==
 
 "@humanwhocodes/config-array@^0.11.8":
   version "0.11.8"
