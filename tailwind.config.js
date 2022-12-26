@@ -28,7 +28,7 @@ module.exports = {
       sans: ['Assistant', 'sans-serif'],
       serif: ['Bitter', 'serif'],
       sansax: ['Raleway', 'monospace'],
-      serifax: ['Bitter', 'El Messiri', 'monospace'],
+      serifax: ['El Messiri', 'monospace'],
       handwritten: ['La Belle Aurore', 'serif'],
     },
     extend: {
