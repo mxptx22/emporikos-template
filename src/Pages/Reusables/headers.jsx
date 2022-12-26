@@ -3,14 +3,14 @@ import tw, { css, styled } from 'twin.macro'
 import { globalPaddingVariants } from '../../styles/GlobalStyles'
 
 export const Header1 = styled.div([
-  tw`font-handwritten text-4xl md:text-6xl my-6 bg-primary-600/90 text-neutral-900 leading-6 md:leading-10`,
+  tw`font-handwritten text-4xl md:text-6xl my-6 bg-primary-600/80 text-neutral-900 leading-6 md:leading-10`,
   { ...globalPaddingVariants.classOffset },
   css`
     width: fit-content;
     position: relative;
     & > * {
       position: relative;
-      ${tw`-top-1 md:-top-3`}
+      ${tw`-top-0.5 md:-top-1`}
     }
   `,
 ])
