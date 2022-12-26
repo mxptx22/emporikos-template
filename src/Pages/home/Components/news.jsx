@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import tw, { css, styled } from 'twin.macro'
-
 import React from 'react'
+
 import SampleImage from '../../../Images/sampleimage.png'
 import { Section } from '../../Reusables/layout'
 import { globalPaddingVariants } from '../../../styles/GlobalStyles'

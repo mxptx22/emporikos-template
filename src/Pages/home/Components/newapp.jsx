@@ -1,12 +1,12 @@
 /** @jsxImportSource @emotion/react */
 import tw, { css, styled } from 'twin.macro'
-
 import React, { useState, useEffect, useRef } from 'react'
+import { useScrollEffect } from '../../Reusables/hooks'
+
 import iPhone from '../../../Images/iphone.png'
 import { Header1 } from '../../Reusables/headers'
 import { Section } from '../../Reusables/layout'
 import { ButtonPrimary } from '../../Reusables/buttons'
-import { useScrollEffect } from '../../Reusables/hooks'
 
 function NewAppAttn() {
   const phoneRef = useRef()

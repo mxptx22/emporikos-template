@@ -1,10 +1,11 @@
 /** @jsxImportSource @emotion/react */
 import tw, { theme, styled } from 'twin.macro'
 import React from 'react'
+import Tilt from 'react-parallax-tilt'
+
 import { Header1, Subheader2 } from '../../Reusables/headers'
 import { Section } from '../../Reusables/layout'
 import { BiCategoryAlt, BiCard, BiChart, BiRocket } from 'react-icons/bi'
-import Tilt from 'react-parallax-tilt'
 
 const Card = ({ header, description, icon }) => {
   return (

@@ -1,8 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import tw, { css, styled } from 'twin.macro'
-import { keyframes } from '@emotion/react'
-
 import React from 'react'
+
 import { globalPaddingVariants } from '../../../styles/GlobalStyles'
 import Hero1Vid from '../../../Images/hero1vid.mp4'
 

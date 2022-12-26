@@ -1,9 +1,9 @@
 /** @jsxImportSource @emotion/react */
 import tw, { theme, styled } from 'twin.macro'
-import React, { useRef, useState, useEffect } from 'react'
+import React, { useRef } from 'react'
+import { useScrollEffect } from '../../Reusables/hooks'
 import { Header1, Label } from '../../Reusables/headers'
 import { Section } from '../../Reusables/layout'
-import { useScrollEffect } from '../../Reusables/hooks'
 
 export const TableCell = ({ textHighlight = '', textLabel = '' }) => {
   const TableContainer = styled.div(

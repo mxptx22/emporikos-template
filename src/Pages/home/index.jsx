@@ -1,5 +1,5 @@
 import React from 'react'
-import { useRef, useState, useEffect } from 'react'
+import { useRef } from 'react'
 import Layout from '../Reusables/layout'
 import Hero from './Components/hero'
 import Recipe from './Components/recipe'

@@ -1,6 +1,8 @@
 /** @jsxImportSource @emotion/react */
 import tw, { css, styled, theme } from 'twin.macro'
+import React from 'react'
 import { globalPaddingVariants } from '../../styles/GlobalStyles'
+
 import { Header1, Label, Subheader1 } from './headers'
 import { Section } from './layout'
 import { ButtonPrimary, ButtonSocial } from './buttons'
@@ -8,8 +10,6 @@ import { ButtonPrimary, ButtonSocial } from './buttons'
 import { BsFillTelephoneFill, BsTwitter, BsFacebook } from 'react-icons/bs'
 import { MdOutlineLocationCity } from 'react-icons/md'
 import { GrFacebook } from 'react-icons/gr'
-
-import React from 'react'
 
 function Contact() {
   const ContainerX = tw`w-screen bg-gradient-to-bl from-primary-800 to-primary-600 text-white`
