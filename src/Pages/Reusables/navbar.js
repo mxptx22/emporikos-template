@@ -11,7 +11,7 @@ export const NavbarStyles = {
   expanded:
     'fixed z-40 min-h-[2rem] bg-neutral-50 py-2 px-4 md:px-16 shadow-md transition-all duration-500 w-screen',
   condensed:
-    'fixed z-40 min-h-[2rem] bg-neutral-50 py-2 px-4 shadow-md transition-all duration-500 rounded-md mt-4 w-[88vw]  ml-[6vw] mr-[6vw] ',
+    'fixed z-40 min-h-[2rem] bg-neutral-50 py-2 px-4 shadow-md transition-all duration-500 rounded-xl mt-4 w-[88vw]  ml-[6vw] mr-[6vw] ',
 }
 
 function Navbar() {
