@@ -1,17 +1,33 @@
 /** @jsxImportSource @emotion/react */
 import tw, { css, styled } from 'twin.macro'
 import { keyframes } from '@emotion/react'
+import { globalPaddingVariants } from '../../styles/GlobalStyles'
 
 import React, { useRef, useState } from 'react'
 import { ReactComponent as BigLogotype } from '../../Images/AgencynameFullLogo.svg'
 import { ALink } from './headers'
 import { BsList, BsX } from 'react-icons/bs'
 
+/**
+ * @const {Object} NavbarStyles - Upon reaching the trigger point, the navigation bar is meant to change its shape - Here are the defined styles - Make sure that the format stays as that of Twin/Emotion 'css' and that only the 'navigation' id is targeted - We don't want hamburger menu to be affected with the margins or paddings
+ * @prop {[]} NavbarStyles.expanded - The styling for the navbar after reaching the trigger point
+ * @prop {[]} NavbarStyles.condensed - The styling for the navbar before reaching the trigger point
+ */
 export const NavbarStyles = {
-  expanded:
-    'fixed z-40 min-h-[2rem] bg-neutral-50 py-2 px-4 md:px-16 shadow-md transition-all duration-500 w-screen',
-  condensed:
-    'fixed z-40 min-h-[2rem] bg-neutral-50 py-2 px-4 shadow-md transition-all duration-500 rounded-xl mt-4 w-[88vw]  ml-[6vw] mr-[6vw] ',
+  expanded: [
+    css`
+      #navigation {
+        ${tw`fixed z-40 min-h-[2rem] bg-neutral-50 py-2 px-4 md:px-16 shadow-md transition-all duration-500 w-screen`}
+      }
+    `,
+  ],
+  condensed: [
+    css`
+      #navigation {
+        ${tw`fixed z-40 min-h-[2rem] bg-neutral-50 py-2 px-4 shadow-md transition-all duration-500 rounded-xl mt-4 w-[88vw]  ml-[6vw] mr-[6vw]`}
+      }
+    `,
+  ],
 }
 
 function Navbar() {
@@ -29,29 +45,31 @@ function Navbar() {
   return (
     <>
       {bigMenu === 'yes' && <BigMenu />}
-      {/* <div className={passClass}> */}
-      <div className="flex justify-between items-center p-2 w-full">
-        <BigLogotype className="h-8 md:h-9" />
-
-        <div className="hidden md:flex gap-6">
-          <ALink>Home</ALink>
-          <ALink>About</ALink>
-          <ALink>Services</ALink>
-          <ALink>Contact</ALink>
-        </div>
-
-        <div
-          ref={hamburgerMenuRef}
-          className="inline-block md:hidden text-4xl cursor-pointer"
-          onClick={() => {
-            showBigMenu()
-          }}
-        >
-          {bigMenu === 'no' && <BsList className="" />}
-          {bigMenu === 'yes' && <BsX className="" />}
+      {/**
+       * @see NavbarStyles
+       * important to put the id navigation - we don't want to target the hamburger menu (see NavbarStyles)
+       */}
+      <div id="navigation">
+        <div className="flex justify-between items-center p-2 w-full">
+          <BigLogotype className="h-8 md:h-9" />
+          <div className="hidden md:flex gap-6">
+            <ALink>Home</ALink>
+            <ALink>About</ALink>
+            <ALink>Services</ALink>
+            <ALink>Contact</ALink>
+          </div>
+          <div
+            ref={hamburgerMenuRef}
+            className="inline-block md:hidden text-4xl cursor-pointer"
+            onClick={() => {
+              showBigMenu()
+            }}
+          >
+            {bigMenu === 'no' && <BsList className="" />}
+            {bigMenu === 'yes' && <BsX className="" />}
+          </div>
         </div>
       </div>
-      {/* </div> */}
     </>
   )
 }

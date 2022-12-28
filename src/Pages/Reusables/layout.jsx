@@ -38,7 +38,7 @@ function Layout({ children, trigger }) {
 
   return (
     <>
-      <div className={RevealEffect}>
+      <div css={RevealEffect}>
         <Navbar />
       </div>
       <div
