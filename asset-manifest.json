@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/emporikos-template/static/css/main.2a05baf4.css",
-    "main.js": "/emporikos-template/static/js/main.218c01a8.js",
+    "main.css": "/emporikos-template/static/css/main.69101130.css",
+    "main.js": "/emporikos-template/static/js/main.e80ffe0b.js",
     "static/media/hero1vid.mp4": "/emporikos-template/static/media/hero1vid.4894d95a6f56560ccfb3.mp4",
     "static/media/raleway-all-700-normal.woff": "/emporikos-template/static/media/raleway-all-700-normal.42089e13b4274eeece4b.woff",
     "static/media/raleway-all-600-normal.woff": "/emporikos-template/static/media/raleway-all-600-normal.e9a98c9a0c352c633ffc.woff",
@@ -110,11 +110,11 @@
     "static/media/el-messiri-latin-ext-700-normal.woff2": "/emporikos-template/static/media/el-messiri-latin-ext-700-normal.0cb3cac782be1901b5a0.woff2",
     "static/media/el-messiri-latin-ext-400-normal.woff2": "/emporikos-template/static/media/el-messiri-latin-ext-400-normal.696be59048ec3e808d8b.woff2",
     "index.html": "/emporikos-template/index.html",
-    "main.2a05baf4.css.map": "/emporikos-template/static/css/main.2a05baf4.css.map",
-    "main.218c01a8.js.map": "/emporikos-template/static/js/main.218c01a8.js.map"
+    "main.69101130.css.map": "/emporikos-template/static/css/main.69101130.css.map",
+    "main.e80ffe0b.js.map": "/emporikos-template/static/js/main.e80ffe0b.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a05baf4.css",
-    "static/js/main.218c01a8.js"
+    "static/css/main.69101130.css",
+    "static/js/main.e80ffe0b.js"
   ]
 }
