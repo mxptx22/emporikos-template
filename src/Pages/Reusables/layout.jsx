@@ -37,18 +37,18 @@ function Layout({ children, trigger }) {
   )
 
   return (
-    <>
+    <div className="w-full">
       <div css={RevealEffect}>
         <Navbar />
       </div>
       <div
-        className="w-screen overflow-hidden"
+        className="w-full overflow-x-hidden"
         css={globalPaddingVariants.class}
       >
         {children}
         <Contact />
       </div>
-    </>
+    </div>
   )
 }
 

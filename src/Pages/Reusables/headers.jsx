@@ -2,6 +2,19 @@
 import tw, { css, styled } from 'twin.macro'
 import { globalPaddingVariants } from '../../styles/GlobalStyles'
 
+export const TitleHeader = ({ titleText = 'Subpage' }) => {
+  return (
+    <div className="mt-36 flex justify-center w-full">
+      <div>
+        <div className="text-6xl md:text-9xl font-handwritten text-primary-700 text-center w-fit relative">
+          {titleText}
+          <div className="absolute w-full h-3 md:h-6 bg-neutral-300 bottom-[40%] -z-10"></div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 export const Header1 = styled.div([
   tw`font-handwritten text-4xl md:text-6xl my-6 bg-primary-600/90 text-black/80 leading-6 md:leading-10`,
   { ...globalPaddingVariants.classOffset },

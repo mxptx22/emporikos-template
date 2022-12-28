@@ -2,6 +2,7 @@ import { jsx } from '@emotion/react'
 /** @jsxImportSource @emotion/react */
 import React from 'react' // eslint-disable-line
 import tw from 'twin.macro'
+import { HashRouter, Routes, Route, BrowserRouter } from 'react-router-dom'
 
 import '@fontsource/assistant/200.css'
 import '@fontsource/assistant/300.css'
@@ -28,9 +29,19 @@ import '@fontsource/el-messiri/500.css'
 import '@fontsource/el-messiri/600.css'
 import '@fontsource/el-messiri/700.css'
 import Home from './Pages/home'
+import About from './Pages/subpages/about'
+import Services from './Pages/subpages/services'
 
 function App() {
-  return <Home />
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
 export default App

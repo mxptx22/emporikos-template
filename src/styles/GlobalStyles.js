@@ -53,7 +53,7 @@ export const globalPaddingVariants = {
 
 const customStyles = css({
   body: [
-    tw`text-base md:text-xl`,
+    tw`text-base md:text-xl bg-neutral-100`,
     {
       color: theme('colors.neutral.900'),
     },

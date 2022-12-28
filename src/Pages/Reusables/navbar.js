@@ -7,6 +7,7 @@ import React, { useRef, useState } from 'react'
 import { ReactComponent as BigLogotype } from '../../Images/AgencynameFullLogo.svg'
 import { ALink } from './headers'
 import { BsList, BsX } from 'react-icons/bs'
+import { Link } from 'react-router-dom'
 
 /**
  * @const {Object} NavbarStyles - Upon reaching the trigger point, the navigation bar is meant to change its shape - Here are the defined styles - Make sure that the format stays as that of Twin/Emotion 'css' and that only the 'navigation' id is targeted - We don't want hamburger menu to be affected with the margins or paddings
@@ -17,7 +18,7 @@ export const NavbarStyles = {
   expanded: [
     css`
       #navigation {
-        ${tw`fixed z-40 min-h-[2rem] bg-neutral-50 py-2 px-4 md:px-16 shadow-md transition-all duration-500 w-screen`}
+        ${tw`fixed z-40 min-h-[2rem] bg-neutral-50 py-2 px-4 md:px-16 shadow-md transition-all duration-500 w-full`}
       }
     `,
   ],
@@ -53,12 +54,22 @@ function Navbar() {
        */}
       <div id="navigation">
         <div className="flex justify-between items-center p-2 w-full">
-          <BigLogotype className="h-8 md:h-9" />
+          <Link to={'/'}>
+            <BigLogotype className="h-8 md:h-9" />
+          </Link>
           <div className="hidden md:flex gap-6">
-            <NavLink>Home</NavLink>
-            <NavLink>About</NavLink>
-            <NavLink>Services</NavLink>
-            <NavLink>Contact</NavLink>
+            <Link to={'/'}>
+              <NavLink>Home</NavLink>
+            </Link>
+            <Link to={'/about'}>
+              <NavLink>About</NavLink>
+            </Link>
+            <Link to={'/services'}>
+              <NavLink>Services</NavLink>
+            </Link>
+            <a href="#contact-container">
+              <NavLink>Contact</NavLink>
+            </a>
           </div>
           <div
             ref={hamburgerMenuRef}
@@ -114,10 +125,15 @@ ${tw`bg-neutral-200/40 backdrop-blur-lg`}
       <div css={HMenuBackdrop}>
         <div css={HMenuContainer}>
           <div className="flex flex-col items-center justify-center pt-24 text-3xl gap-5 h-full">
-            <ALink>Home</ALink>
-            <ALink>About</ALink>
-            <ALink>Services</ALink>
-            <ALink>Contact</ALink>
+            <Link to={'/'}>
+              <ALink>Home</ALink>
+            </Link>
+            <Link to={'/about'}>
+              <ALink>About</ALink>
+            </Link>
+            <Link to={'/services'}>
+              <ALink>Services</ALink>
+            </Link>
           </div>
         </div>
       </div>

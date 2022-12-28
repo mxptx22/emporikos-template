@@ -24,7 +24,10 @@ function Contact() {
   ]
 
   return (
-    <div css={[globalPaddingVariants.classOffset, ContainerX]}>
+    <div
+      id="contact-container"
+      css={[ContainerX, globalPaddingVariants.classOffset]}
+    >
       <Section>
         <HeaderX>
           <span>Contact</span>

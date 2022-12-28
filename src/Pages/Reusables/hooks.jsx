@@ -1,4 +1,14 @@
 import React, { useState, useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
+
+export const useScrollToTop = () => {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+
+  return null
+}
 
 /**
  * @param {React.MutableRefObject<undefined>} refElement - The ref element used as reference for trigger point

@@ -7,6 +7,7 @@ import Appeal from './Components/appeal'
 import News from './Components/news'
 import ExpStats from './Components/expstats'
 import NewAppAttn from './Components/newapp'
+import { useScrollToTop } from '../Reusables/hooks'
 
 function Home() {
   /**
@@ -15,6 +16,7 @@ function Home() {
    * - [MEMO] You will see two startRef's -> One is attached to the relevant element just before Hero, and the other is the 'trigger' prop being passed to Layout
    */
   const startRef = useRef()
+  useScrollToTop()
 
   return (
     <>
