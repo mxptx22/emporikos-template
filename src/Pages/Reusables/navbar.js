@@ -30,6 +30,8 @@ export const NavbarStyles = {
   ],
 }
 
+const NavLink = tw(ALink)`font-normal`
+
 function Navbar() {
   const [bigMenu, determineBigMenu] = useState('no')
   const showBigMenu = () => {
@@ -53,10 +55,10 @@ function Navbar() {
         <div className="flex justify-between items-center p-2 w-full">
           <BigLogotype className="h-8 md:h-9" />
           <div className="hidden md:flex gap-6">
-            <ALink>Home</ALink>
-            <ALink>About</ALink>
-            <ALink>Services</ALink>
-            <ALink>Contact</ALink>
+            <NavLink>Home</NavLink>
+            <NavLink>About</NavLink>
+            <NavLink>Services</NavLink>
+            <NavLink>Contact</NavLink>
           </div>
           <div
             ref={hamburgerMenuRef}
